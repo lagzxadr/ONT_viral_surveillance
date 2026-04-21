@@ -309,19 +309,79 @@ def build_uuid_map(series: pd.Series) -> dict[str, int]:
 # ── Vocabulary loading ────────────────────────────────────────────────────────
 
 def load_vocabulary(con: duckdb.DuckDBPyConnection, vocab_dir: Path) -> None:
-    """Load OMOP vocabulary CSV files into DuckDB vocabulary tables."""
+    """Load OMOP vocabulary CSV files into DuckDB vocabulary tables.
+
+    Handles Athena format (YYYYMMDD integer dates, tab-delimited) automatically.
+    """
     log.info("Loading OMOP vocabulary files from %s", vocab_dir)
+
+    # Tables that have date columns needing potential YYYYMMDD → DATE conversion
+    date_col_tables = {
+        "concept":               ["valid_start_date", "valid_end_date"],
+        "concept_relationship":  ["valid_start_date", "valid_end_date"],
+        "source_to_concept_map": ["valid_start_date", "valid_end_date"],
+    }
+
     for table, filename in VOCAB_FILES.items():
         fpath = vocab_dir / filename
         if not fpath.exists():
             log.warning("Vocabulary file not found, skipping: %s", fpath)
             continue
         log.info("  Loading %s → table '%s'", filename, table)
-        con.execute(f"""
-            INSERT INTO {table}
-            SELECT * FROM read_csv_auto('{fpath}', header=true, sep='\\t',
-                                        ignore_errors=true, quote='')
-        """)
+
+        # Detect Athena YYYYMMDD date format from first data row
+        athena_dates = False
+        if table in date_col_tables:
+            try:
+                with open(fpath, encoding="utf-8") as fh:
+                    header_cols = fh.readline().strip().split("\t")
+                    first_vals  = fh.readline().strip().split("\t")
+                row = dict(zip(header_cols, first_vals))
+                sample_date = row.get("valid_start_date", "")
+                athena_dates = len(sample_date) == 8 and sample_date.isdigit()
+            except Exception:
+                athena_dates = False
+
+        try:
+            # Always use pandas for tables with date columns to handle format safely
+            if table in date_col_tables:
+                log.info("    Reading via pandas (date conversion: %s) ...",
+                         "YYYYMMDD" if athena_dates else "auto")
+                # Use chunked reading for large files to avoid OOM
+                chunk_size = 500_000
+                total_inserted = 0
+                reader = pd.read_csv(
+                    fpath, sep="\t", dtype=str, low_memory=False,
+                    keep_default_na=False, na_values=[""],
+                    chunksize=chunk_size
+                )
+                for chunk in reader:
+                    if athena_dates:
+                        for dc in date_col_tables[table]:
+                            if dc in chunk.columns:
+                                chunk[dc] = pd.to_datetime(
+                                    chunk[dc], format="%Y%m%d", errors="coerce"
+                                ).dt.date
+                    con.register("_vocab_staging", chunk)
+                    con.execute(f"INSERT INTO {table} SELECT * FROM _vocab_staging")
+                    con.unregister("_vocab_staging")
+                    total_inserted += len(chunk)
+                    if total_inserted % 2_000_000 == 0:
+                        log.info("    ... %d rows loaded so far", total_inserted)
+            else:
+                fpath_str = str(fpath).replace("\\", "/")
+                con.execute(f"""
+                    INSERT INTO {table}
+                    SELECT * FROM read_csv_auto(
+                        '{fpath_str}',
+                        header=true, sep='\\t',
+                        ignore_errors=true, quote=''
+                    )
+                """)
+        except Exception as exc:
+            log.error("    Failed to load %s: %s", filename, exc)
+            continue
+
         count = con.execute(f"SELECT COUNT(*) FROM {table}").fetchone()[0]
         log.info("    Loaded %d rows", count)
 

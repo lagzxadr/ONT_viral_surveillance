@@ -1,0 +1,26 @@
+{
+  "run_timestamp": "2026-04-21T04:55:26.906495",
+  "tables": {
+    "person": {
+      "source_rows": 109,
+      "cdm_rows": 109
+    },
+    "condition_occurrence": {
+      "source_rows": 5901,
+      "cdm_rows": 5901
+    },
+    "drug_exposure": {
+      "source_rows": 6874,
+      "cdm_rows": 6874
+    },
+    "visit_occurrence": {
+      "source_rows": 10715,
+      "cdm_rows": 10715
+    },
+    "procedure_occurrence": {
+      "source_rows": 24370,
+      "cdm_rows": 24370
+    }
+  },
+  "mapping_coverage_pct": 72.92
+}
