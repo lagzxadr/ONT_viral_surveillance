@@ -29,7 +29,7 @@ standard_concept_id	standard_concept_name	domain	vocabulary	concept_code	concept
 4053118	Full-time employment	Observation	SNOMED	160903007	Clinical Finding	1	447.0	160903007	conditions.CODE	CONCEPT_DIRECT
 4295880	Intramuscular injection	Procedure	SNOMED	76601001	Procedure	1	412.0	76601001	procedures.CODE	CONCEPT_DIRECT
 4281516	Gingivitis	Condition	SNOMED	66383009	Disorder	1	402.0	66383009	conditions.CODE	CONCEPT_DIRECT
-44784270	Consultation for treatment	Observation	SNOMED	698314001	Procedure	1	315.0	698314001	procedures.CODE | encounters.CODE	CONCEPT_DIRECT
+44784270	Consultation for treatment	Observation	SNOMED	698314001	Procedure	1	315.0	698314001	encounters.CODE | procedures.CODE	CONCEPT_DIRECT
 4059634	Part-time employment	Observation	SNOMED	160904001	Clinical Finding	1	312.0	160904001	conditions.CODE	CONCEPT_DIRECT
 40163924	24 HR metformin hydrochloride 500 MG Extended Release Oral Tablet	Drug	RxNorm	860975	Quant Clinical Drug	1	284.0	860975	medications.CODE	CONCEPT_DIRECT
 4240345	Physical examination	Procedure	SNOMED	5880005	Procedure	1	241.0	5880005	procedures.CODE	CONCEPT_DIRECT
@@ -45,8 +45,8 @@ standard_concept_id	standard_concept_name	domain	vocabulary	concept_code	concept
 4217975	Normal pregnancy	Condition	SNOMED	72892002	Clinical Finding	1	151.0	72892002	conditions.CODE	CONCEPT_DIRECT
 4091461	Standard pregnancy test	Measurement	SNOMED	252160004	Procedure	1	149.0	252160004	procedures.CODE	CONCEPT_DIRECT
 4180248	Rehabilitation therapy	Procedure	SNOMED	52052004	Procedure	1	148.0	52052004	procedures.CODE	CONCEPT_DIRECT
-42538208	Not in labor force	Observation	SNOMED	741062008	Clinical Finding	1	143.0	741062008	conditions.CODE	CONCEPT_DIRECT
 4060626	Ultrasound scan for fetal viability	Procedure	SNOMED	169230002	Procedure	1	143.0	169230002	procedures.CODE	CONCEPT_DIRECT
+42538208	Not in labor force	Observation	SNOMED	741062008	Clinical Finding	1	143.0	741062008	conditions.CODE	CONCEPT_DIRECT
 42536965	CRAFFT Screening Test	Measurement	SNOMED	736042002	Staging / Scales	1	140.0	868187001	procedures.CODE	MAPS_TO
 4309238	Social isolation	Observation	SNOMED	422650009	Clinical Finding	1	139.0	422650009	conditions.CODE	CONCEPT_DIRECT
 4107731	Subcutaneous immunotherapy	Procedure	SNOMED	180256009	Procedure	1	131.0	180256009	procedures.CODE	CONCEPT_DIRECT
@@ -57,43 +57,45 @@ standard_concept_id	standard_concept_name	domain	vocabulary	concept_code	concept
 4234541	Cytopathology procedure, preparation of smear, genital source	Procedure	SNOMED	90226004	Procedure	1	112.0	90226004	procedures.CODE	CONCEPT_DIRECT
 40169281	60 ACTUAT fluticasone propionate 0.25 MG/ACTUAT / salmeterol 0.05 MG/ACTUAT Dry Powder Inhaler	Drug	RxNorm	896209	Quant Clinical Drug	1	111.0	896209	medications.CODE	CONCEPT_DIRECT
 1154380	albuterol 5 MG/ML Inhalation Solution	Drug	RxNorm	245314	Clinical Drug	1	111.0	245314	medications.CODE	CONCEPT_DIRECT
-4133840	Spirometry	Measurement	SNOMED	127783003	Procedure	1	110.0	127783003	procedures.CODE	CONCEPT_DIRECT
 4040783	Movement therapy	Procedure	SNOMED	229064008	Procedure	1	110.0	229064008	procedures.CODE	CONCEPT_DIRECT
+4133840	Spirometry	Measurement	SNOMED	127783003	Procedure	1	110.0	127783003	procedures.CODE	CONCEPT_DIRECT
 45768458	Victim of intimate partner abuse	Observation	SNOMED	706893006	Clinical Finding	1	109.0	706893006	conditions.CODE	CONCEPT_DIRECT
 4112343	Acute viral pharyngitis	Condition	SNOMED	195662009	Disorder	1	108.0	195662009	conditions.CODE	CONCEPT_DIRECT
 1127433	acetaminophen 325 MG Oral Tablet	Drug	RxNorm	313782	Clinical Drug	1	102.0	313782	medications.CODE	CONCEPT_DIRECT
 133228	Dental caries	Condition	SNOMED	80967001	Disorder	1	101.0	80967001	conditions.CODE	CONCEPT_DIRECT
 4258677	Blood group typing	Measurement	SNOMED	44608003	Procedure	1	97.0	44608003	procedures.CODE	CONCEPT_DIRECT
-40162606	acetaminophen 300 MG / hydrocodone bitartrate 5 MG Oral Tablet	Drug	RxNorm	856987	Clinical Drug	1	95.0	856987	medications.CODE	CONCEPT_DIRECT
 4141655	Morse falls risk assessment	Measurement	SNOMED	426938003	Staging / Scales	1	95.0	762993000	procedures.CODE	MAPS_TO
 4080059	Obstetric emergency hospital admission	Observation	SNOMED	183460006	Procedure	1	95.0	183460006	encounters.CODE	CONCEPT_DIRECT
+40162606	acetaminophen 300 MG / hydrocodone bitartrate 5 MG Oral Tablet	Drug	RxNorm	856987	Clinical Drug	1	95.0	856987	medications.CODE	CONCEPT_DIRECT
 4015149	Postnatal visit	Observation	SNOMED	169762003	Procedure	1	94.0	169762003	encounters.CODE	CONCEPT_DIRECT
 40481948	Detection of chromosomal aneuploidy in prenatal amniotic fluid specimen using FISH screening technique	Procedure	SNOMED	443529005	Procedure	1	93.0	443529005	procedures.CODE	CONCEPT_DIRECT
 4149386	Urine screening for glucose	Measurement	SNOMED	268556000	Procedure	1	93.0	268556000	procedures.CODE	CONCEPT_DIRECT
-4014117	Gonorrhea infection titer test	Measurement	SNOMED	165829005	Procedure	1	92.0	165829005	procedures.CODE	CONCEPT_DIRECT
-260139	Acute bronchitis	Condition	SNOMED	10509002	Disorder	1	92.0	10509002	conditions.CODE	CONCEPT_DIRECT
-4024509	Urine culture	Measurement	SNOMED	117010004	Procedure	1	92.0	117010004	procedures.CODE	CONCEPT_DIRECT
-4168615	Hepatitis B surface antigen measurement	Measurement	SNOMED	47758006	Procedure	1	92.0	47758006	procedures.CODE	CONCEPT_DIRECT
-4149631	Chlamydia antigen test	Measurement	SNOMED	310861008	Procedure	1	92.0	310861008	procedures.CODE	CONCEPT_DIRECT
+4018595	Measurement of Varicella-zoster virus antibody	Measurement	SNOMED	104326007	Procedure	1	92.0	104326007	procedures.CODE	CONCEPT_DIRECT
 4151408	Syphilis infectious titer test	Measurement	SNOMED	269828009	Procedure	1	92.0	269828009	procedures.CODE	CONCEPT_DIRECT
 4102154	Skin test for tuberculosis, Tine test	Measurement	SNOMED	28163009	Procedure	1	92.0	28163009	procedures.CODE	CONCEPT_DIRECT
-4018595	Measurement of Varicella-zoster virus antibody	Measurement	SNOMED	104326007	Procedure	1	92.0	104326007	procedures.CODE	CONCEPT_DIRECT
-4018603	Hepatitis C antibody, confirmatory test	Measurement	SNOMED	104375008	Procedure	1	92.0	104375008	procedures.CODE	CONCEPT_DIRECT
+4149631	Chlamydia antigen test	Measurement	SNOMED	310861008	Procedure	1	92.0	310861008	procedures.CODE	CONCEPT_DIRECT
 4191851	Urine screening test for diabetes	Measurement	SNOMED	395123002	Procedure	1	92.0	395123002	procedures.CODE	CONCEPT_DIRECT
 4136494	HIV antigen test	Measurement	SNOMED	31676001	Procedure	1	92.0	31676001	procedures.CODE	CONCEPT_DIRECT
+4018603	Hepatitis C antibody, confirmatory test	Measurement	SNOMED	104375008	Procedure	1	92.0	104375008	procedures.CODE	CONCEPT_DIRECT
 19033893	ibuprofen 400 MG Oral Tablet [Ibu]	Drug	RxNorm	206905	Branded Drug	1	92.0	206905	medications.CODE	CONCEPT_DIRECT
-4150653	Fetal anatomy study	Procedure	SNOMED	271442007	Procedure	1	89.0	271442007	procedures.CODE	CONCEPT_DIRECT
+260139	Acute bronchitis	Condition	SNOMED	10509002	Disorder	1	92.0	10509002	conditions.CODE	CONCEPT_DIRECT
+4168615	Hepatitis B surface antigen measurement	Measurement	SNOMED	47758006	Procedure	1	92.0	47758006	procedures.CODE	CONCEPT_DIRECT
+4014117	Gonorrhea infection titer test	Measurement	SNOMED	165829005	Procedure	1	92.0	165829005	procedures.CODE	CONCEPT_DIRECT
+4024509	Urine culture	Measurement	SNOMED	117010004	Procedure	1	92.0	117010004	procedures.CODE	CONCEPT_DIRECT
 4078285	Alpha-fetoprotein test - antenatal	Measurement	SNOMED	275833003	Procedure	1	89.0	275833003	procedures.CODE	CONCEPT_DIRECT
+4150653	Fetal anatomy study	Procedure	SNOMED	271442007	Procedure	1	89.0	271442007	procedures.CODE	CONCEPT_DIRECT
 4304821	Streptococcus pneumoniae group B antigen assay	Measurement	SNOMED	118001005	Procedure	1	88.0	118001005	procedures.CODE	CONCEPT_DIRECT
 4309371	Occupational therapy	Observation	SNOMED	84478008	Procedure	1	87.0	84478008	procedures.CODE	CONCEPT_DIRECT
+38003564	Not Hispanic or Latino	Ethnicity	Ethnicity	Not Hispanic	Ethnicity	1	86.0	nonhispanic	patients.ETHNICITY	PLAIN_TEXT_MAP
 4313322	Reports of violence in the environment	Observation	SNOMED	424393004	Clinical Finding	1	81.0	424393004	conditions.CODE	CONCEPT_DIRECT
 4251171	Unemployed	Observation	SNOMED	73438004	Clinical Finding	1	80.0	73438004	conditions.CODE	CONCEPT_DIRECT
 4249893	Colonoscopy	Procedure	SNOMED	73761001	Procedure	1	80.0	73761001	procedures.CODE	CONCEPT_DIRECT
 4238738	Physical therapy procedure	Procedure	SNOMED	91251008	Procedure	1	79.0	91251008	procedures.CODE	CONCEPT_DIRECT
-8532	FEMALE	Gender	Gender	F	Gender	1	66.0	F	patients.GENDER	CONCEPT_DIRECT
+8527	White	Race	Race	5	Race	1	77.0	white	patients.RACE	PLAIN_TEXT_MAP
+8532	FEMALE	Gender	Gender	F	Gender	1	66.0	F	patients.GENDER	PLAIN_TEXT_MAP
 1154062	72 HR fentanyl 0.025 MG/HR Transdermal System	Drug	RxNorm	245134	Quant Clinical Drug	1	66.0	245134	medications.CODE	CONCEPT_DIRECT
-40231918	acetaminophen 325 MG / oxycodone hydrochloride 10 MG Oral Tablet [Percocet]	Drug	RxNorm	1049625	Branded Drug	1	59.0	1049625	medications.CODE	CONCEPT_DIRECT
 4024958	Throat culture	Measurement	SNOMED	117015009	Procedure	1	59.0	117015009	procedures.CODE	CONCEPT_DIRECT
+40231918	acetaminophen 325 MG / oxycodone hydrochloride 10 MG Oral Tablet [Percocet]	Drug	RxNorm	1049625	Branded Drug	1	59.0	1049625	medications.CODE	CONCEPT_DIRECT
 1340204	History of event	Observation	OMOP Extension	OMOP5165859	Context-dependent	6	58.0	267020005 | 161665007 | 428251008 | 161744009 | 399261000 | 399211009	conditions.CODE	MAPS_TO
 19123989	albuterol 0.83 MG/ML Inhalation Solution	Drug	RxNorm	630208	Clinical Drug	1	56.0	630208	medications.CODE	CONCEPT_DIRECT
 4076230	Received higher education	Observation	SNOMED	224299000	Clinical Finding	1	54.0	224299000	conditions.CODE	CONCEPT_DIRECT
@@ -102,472 +104,477 @@ standard_concept_id	standard_concept_name	domain	vocabulary	concept_code	concept
 4060985	Body mass index 30+ - obesity	Observation	SNOMED	162864005	Clinical Finding	1	49.0	162864005	conditions.CODE	CONCEPT_DIRECT
 4153050	Development of individualized plan of care	Procedure	SNOMED	370789001	Procedure	1	47.0	370789001	procedures.CODE	CONCEPT_DIRECT
 4151779	Initial patient assessment	Procedure	SNOMED	315639002	Procedure	1	47.0	315639002	procedures.CODE	CONCEPT_DIRECT
-40479598	Urinalysis with reflex to microscopy and culture	Measurement	SNOMED	441550005	Procedure	1	46.0	441550005	procedures.CODE	CONCEPT_DIRECT
 1713671	amoxicillin 250 MG / clavulanate 125 MG Oral Tablet	Drug	RxNorm	562251	Clinical Drug	1	46.0	562251	medications.CODE	CONCEPT_DIRECT
+40479598	Urinalysis with reflex to microscopy and culture	Measurement	SNOMED	441550005	Procedure	1	46.0	441550005	procedures.CODE	CONCEPT_DIRECT
 4162736	Oxygen administration by mask	Procedure	SNOMED	371908008	Procedure	1	46.0	371908008	procedures.CODE	CONCEPT_DIRECT
-4300515	Respiratory function	Observation	SNOMED	78064003	Observable Entity	1	45.0	23426006	procedures.CODE	MAPS_TO
 19020053	acetaminophen 500 MG Oral Tablet	Drug	RxNorm	198440	Clinical Drug	1	45.0	198440	medications.CODE	CONCEPT_DIRECT
-8507	MALE	Gender	Gender	M	Gender	1	43.0	M	patients.GENDER	CONCEPT_DIRECT
+4300515	Respiratory function	Observation	SNOMED	78064003	Observable Entity	1	45.0	23426006	procedures.CODE	MAPS_TO
+8507	MALE	Gender	Gender	M	Gender	1	43.0	M	patients.GENDER	PLAIN_TEXT_MAP
 40231805	Abuse-Deterrent 12 HR oxycodone hydrochloride 10 MG Extended Release Oral Tablet [Oxycontin]	Drug	RxNorm	1049504	Branded Drug	1	41.0	1049504	medications.CODE	CONCEPT_DIRECT
 1718765	12 HR hydrocodone bitartrate 10 MG Extended Release Oral Capsule	Drug	RxNorm	1860491	Quant Clinical Drug	1	41.0	1860491	medications.CODE	CONCEPT_DIRECT
 320128	Essential hypertension	Condition	SNOMED	59621000	Disorder	1	40.0	59621000	conditions.CODE	CONCEPT_DIRECT
 19078461	ibuprofen 200 MG Oral Tablet	Drug	RxNorm	310965	Clinical Drug	1	39.0	310965	medications.CODE	CONCEPT_DIRECT
-19129144	{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Jolivette 28 Day]	Drug	RxNorm	757594	Branded Pack	1	38.0	757594	medications.CODE	CONCEPT_DIRECT
 4196006	Placing subject in prone position	Procedure	SNOMED	431182000	Procedure	1	38.0	431182000	procedures.CODE	CONCEPT_DIRECT
 40160973	0.4 ML enoxaparin sodium 100 MG/ML Prefilled Syringe	Drug	RxNorm	854235	Quant Clinical Drug	1	38.0	854235	medications.CODE	CONCEPT_DIRECT
-4235813	Postoperative follow-up visit	Observation	SNOMED	439740005	Procedure	1	37.0	439740005	encounters.CODE	CONCEPT_DIRECT
+19129144	{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Jolivette 28 Day]	Drug	RxNorm	757594	Branded Pack	1	38.0	757594	medications.CODE	CONCEPT_DIRECT
 4199458	Passive immunization	Procedure	SNOMED	51116004	Procedure	1	37.0	51116004	procedures.CODE	CONCEPT_DIRECT
-439777	Anemia	Condition	SNOMED	271737000	Disorder	1	36.0	271737000	conditions.CODE	CONCEPT_DIRECT
-763987	Discharge from skilled nursing facility	Observation	SNOMED	449381000124108	Procedure	1	36.0	449381000124108	procedures.CODE	CONCEPT_DIRECT
-763990	Admission to skilled nursing facility	Observation	SNOMED	449411000124106	Procedure	1	36.0	449411000124106	encounters.CODE	CONCEPT_DIRECT
+4235813	Postoperative follow-up visit	Observation	SNOMED	439740005	Procedure	1	37.0	439740005	encounters.CODE	CONCEPT_DIRECT
 1115171	naproxen sodium 220 MG Oral Tablet	Drug	RxNorm	849574	Clinical Drug	1	36.0	849574	medications.CODE	CONCEPT_DIRECT
+763990	Admission to skilled nursing facility	Observation	SNOMED	449411000124106	Procedure	1	36.0	449411000124106	encounters.CODE	CONCEPT_DIRECT
+763987	Discharge from skilled nursing facility	Observation	SNOMED	449381000124108	Procedure	1	36.0	449381000124108	procedures.CODE	CONCEPT_DIRECT
 4268628	History AND physical examination	Procedure	SNOMED	63332003	Procedure	1	36.0	63332003	procedures.CODE	CONCEPT_DIRECT
 4021319	Pre-discharge assessment	Procedure	SNOMED	225386006	Procedure	1	36.0	225386006	procedures.CODE	CONCEPT_DIRECT
+439777	Anemia	Condition	SNOMED	271737000	Disorder	1	36.0	271737000	conditions.CODE	CONCEPT_DIRECT
 4298490	Sprain	Observation	SNOMED	384709000	Morph Abnormality	1	35.0	384709000	conditions.CODE	CONCEPT_DIRECT
 4205829	Speech and language therapy regime	Observation	SNOMED	311555007	Procedure	1	35.0	311555007	procedures.CODE	CONCEPT_DIRECT
 372328	Otitis media	Condition	SNOMED	65363002	Disorder	1	35.0	65363002	conditions.CODE	CONCEPT_DIRECT
-4059650	Risk activity involvement	Observation	SNOMED	160968000	Clinical Finding	1	34.0	160968000	conditions.CODE	CONCEPT_DIRECT
 4221994	History taking	Procedure	SNOMED	84100007	Procedure	1	34.0	84100007	procedures.CODE	CONCEPT_DIRECT
-36712761	Unhealthy alcohol drinking behavior	Observation	SNOMED	10939881000119105	Clinical Finding	1	34.0	10939881000119105	conditions.CODE	CONCEPT_DIRECT
 4073052	Discussion about signs and symptoms	Procedure	SNOMED	223470000	Procedure	1	34.0	223470000	procedures.CODE	CONCEPT_DIRECT
+36712761	Unhealthy alcohol drinking behavior	Observation	SNOMED	10939881000119105	Clinical Finding	1	34.0	10939881000119105	conditions.CODE	CONCEPT_DIRECT
 4085730	Antibiotic therapy	Procedure	SNOMED	281789004	Procedure	1	34.0	281789004	procedures.CODE	CONCEPT_DIRECT
 40169217	120 ACTUAT fluticasone propionate 0.044 MG/ACTUAT Metered Dose Inhaler [Flovent]	Drug	RxNorm	895996	Quant Branded Drug	1	34.0	895996	medications.CODE	CONCEPT_DIRECT
-4212473	Urine specimen collection	Procedure	SNOMED	57617002	Procedure	1	33.0	57617002	procedures.CODE	CONCEPT_DIRECT
+4059650	Risk activity involvement	Observation	SNOMED	160968000	Clinical Finding	1	34.0	160968000	conditions.CODE	CONCEPT_DIRECT
 4275113	Insertion of intrauterine contraceptive device	Procedure	SNOMED	65200003	Procedure	1	33.0	65200003	procedures.CODE	CONCEPT_DIRECT
+4212473	Urine specimen collection	Procedure	SNOMED	57617002	Procedure	1	33.0	57617002	procedures.CODE	CONCEPT_DIRECT
 19010292	1 ML tacrolimus 5 MG/ML Injection [Prograf]	Drug	RxNorm	108515	Quant Branded Drug	1	32.0	108515	medications.CODE	CONCEPT_DIRECT
 4043071	Cognitive and behavioral therapy	Procedure	SNOMED	228557008	Procedure	1	32.0	228557008	procedures.CODE	CONCEPT_DIRECT
 4059978	Implantation of subcutaneous contraceptive	Procedure	SNOMED	169553002	Procedure	1	31.0	169553002	procedures.CODE	CONCEPT_DIRECT
 4125906	Suture open wound	Procedure	SNOMED	288086009	Procedure	1	31.0	288086009	procedures.CODE	CONCEPT_DIRECT
 443419	Laceration - injury	Condition	SNOMED	312608009	Disorder	1	31.0	312608009	conditions.CODE	CONCEPT_DIRECT
-28060	Streptococcal sore throat	Condition	SNOMED	43878008	Disorder	1	30.0	43878008	conditions.CODE	CONCEPT_DIRECT
 4016390	Sleep apnea assessment	Procedure	SNOMED	103750000	Procedure	1	30.0	103750000	procedures.CODE	CONCEPT_DIRECT
-46272983	Transplantation of kidney regime	Observation	SNOMED	711446003	Procedure	1	29.0	711446003	procedures.CODE	CONCEPT_DIRECT
+28060	Streptococcal sore throat	Condition	SNOMED	43878008	Disorder	1	30.0	43878008	conditions.CODE	CONCEPT_DIRECT
 19079924	acetaminophen 160 MG Chewable Tablet	Drug	RxNorm	313820	Clinical Drug	1	29.0	313820	medications.CODE	CONCEPT_DIRECT
-4078393	Miscarriage in first trimester	Condition	SNOMED	19169002	Disorder	1	28.0	19169002	conditions.CODE	CONCEPT_DIRECT
+46272983	Transplantation of kidney regime	Observation	SNOMED	711446003	Procedure	1	29.0	711446003	procedures.CODE	CONCEPT_DIRECT
 4163872	Plain X-ray of chest	Procedure	SNOMED	399208008	Procedure	1	28.0	399208008	procedures.CODE	CONCEPT_DIRECT
-4122116	Tooth eruption disorder	Condition	SNOMED	234949000	Disorder	1	28.0	234949000	conditions.CODE	CONCEPT_DIRECT
 1511248	NDA020503 200 ACTUAT albuterol 0.09 MG/ACTUAT Metered Dose Inhaler	Drug	RxNorm	2123111	Clinical Drug	1	28.0	2123111	medications.CODE	CONCEPT_DIRECT
-4144035	Acute infective cystitis	Condition	SNOMED	307426000	Disorder	1	27.0	307426000	conditions.CODE	CONCEPT_DIRECT
+4122116	Tooth eruption disorder	Condition	SNOMED	234949000	Disorder	1	28.0	234949000	conditions.CODE	CONCEPT_DIRECT
+4078393	Miscarriage in first trimester	Condition	SNOMED	19169002	Disorder	1	28.0	19169002	conditions.CODE	CONCEPT_DIRECT
 40221901	acetaminophen 300 MG / codeine phosphate 15 MG Oral Tablet	Drug	RxNorm	993770	Clinical Drug	1	27.0	993770	medications.CODE	CONCEPT_DIRECT
+4144035	Acute infective cystitis	Condition	SNOMED	307426000	Disorder	1	27.0	307426000	conditions.CODE	CONCEPT_DIRECT
 4158254	Health risks education	Observation	SNOMED	370995009	Procedure	1	27.0	370995009	procedures.CODE	CONCEPT_DIRECT
-19019979	ibuprofen 100 MG Oral Tablet	Drug	RxNorm	198405	Clinical Drug	1	26.0	198405	medications.CODE	CONCEPT_DIRECT
-19127904	{24 (drospirenone 3 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 4 (inert ingredients 1 MG Oral Tablet) } Pack [Yaz 28 Day]	Drug	RxNorm	748856	Branded Pack	1	26.0	748856	medications.CODE	CONCEPT_DIRECT
 4037675	Brief general examination	Procedure	SNOMED	162676008	Procedure	1	26.0	162676008	procedures.CODE	CONCEPT_DIRECT
 4187458	Review of systems	Procedure	SNOMED	415300000	Procedure	1	26.0	415300000	procedures.CODE	CONCEPT_DIRECT
-19041324	acetaminophen 325 MG Oral Tablet [Tylenol]	Drug	RxNorm	209387	Branded Drug	1	26.0	209387	medications.CODE	CONCEPT_DIRECT
 4033233	Peripheral blood smear interpretation	Measurement	SNOMED	14768001	Procedure	1	26.0	14768001	procedures.CODE	CONCEPT_DIRECT
+19041324	acetaminophen 325 MG Oral Tablet [Tylenol]	Drug	RxNorm	209387	Branded Drug	1	26.0	209387	medications.CODE	CONCEPT_DIRECT
 4145802	Has a criminal record	Observation	SNOMED	266948004	Clinical Finding	1	26.0	266948004	conditions.CODE	CONCEPT_DIRECT
-4214746	Severe anxiety (panic)	Condition	SNOMED	80583007	Clinical Finding	1	25.0	80583007	conditions.CODE	CONCEPT_DIRECT
+19127904	{24 (drospirenone 3 MG / ethinyl estradiol 0.02 MG Oral Tablet) / 4 (inert ingredients 1 MG Oral Tablet) } Pack [Yaz 28 Day]	Drug	RxNorm	748856	Branded Pack	1	26.0	748856	medications.CODE	CONCEPT_DIRECT
+19019979	ibuprofen 100 MG Oral Tablet	Drug	RxNorm	198405	Clinical Drug	1	26.0	198405	medications.CODE	CONCEPT_DIRECT
 4194763	History and physical examination, limited	Procedure	SNOMED	67879005	Procedure	1	25.0	67879005	procedures.CODE	CONCEPT_DIRECT
 40224805	1 ML medroxyprogesterone acetate 150 MG/ML Injection	Drug	RxNorm	1000126	Quant Clinical Drug	1	25.0	1000126	medications.CODE	CONCEPT_DIRECT
 765457	Received certificate of high school equivalency	Observation	SNOMED	5251000175109	Clinical Finding	1	25.0	5251000175109	conditions.CODE	CONCEPT_DIRECT
-1519937	etonogestrel 68 MG Drug Implant	Drug	RxNorm	389221	Clinical Drug	1	24.0	389221	medications.CODE	CONCEPT_DIRECT
+4214746	Severe anxiety (panic)	Condition	SNOMED	80583007	Clinical Finding	1	25.0	80583007	conditions.CODE	CONCEPT_DIRECT
 257012	Chronic sinusitis	Condition	SNOMED	40055000	Disorder	1	24.0	40055000	conditions.CODE	CONCEPT_DIRECT
-4015590	Counseling for termination of pregnancy	Procedure	SNOMED	10383002	Procedure	1	23.0	10383002	procedures.CODE	CONCEPT_DIRECT
-4214589	Asthma follow-up	Observation	SNOMED	394701000	Procedure	1	23.0	394701000	encounters.CODE	CONCEPT_DIRECT
-4148755	Patient-initiated encounter	Observation	SNOMED	270427003	Procedure	1	23.0	270427003	encounters.CODE	CONCEPT_DIRECT
-4151422	Sputum examination	Measurement	SNOMED	269911007	Procedure	1	23.0	269911007	procedures.CODE	CONCEPT_DIRECT
+1519937	etonogestrel 68 MG Drug Implant	Drug	RxNorm	389221	Clinical Drug	1	24.0	389221	medications.CODE	CONCEPT_DIRECT
 19127922	{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Camila 28 Day]	Drug	RxNorm	748962	Branded Pack	1	23.0	748962	medications.CODE	CONCEPT_DIRECT
 37018340	Induced termination of pregnancy	Procedure	SNOMED	714812005	Procedure	1	23.0	714812005	procedures.CODE	CONCEPT_DIRECT
 4163951	Electrocardiographic procedure	Procedure	SNOMED	29303009	Procedure	1	23.0	29303009	procedures.CODE	CONCEPT_DIRECT
+38003563	Hispanic or Latino	Ethnicity	Ethnicity	Hispanic	Ethnicity	1	23.0	hispanic	patients.ETHNICITY	PLAIN_TEXT_MAP
 436096	Chronic pain	Condition	SNOMED	82423001	Clinical Finding	1	23.0	82423001	conditions.CODE	CONCEPT_DIRECT
 4302270	Pregnancy termination care	Observation	SNOMED	386394001	Procedure	1	23.0	386394001	procedures.CODE	CONCEPT_DIRECT
-40229134	acetaminophen 21.7 MG/ML / dextromethorphan hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution	Drug	RxNorm	1043400	Clinical Drug	1	22.0	1043400	medications.CODE	CONCEPT_DIRECT
+4214589	Asthma follow-up	Observation	SNOMED	394701000	Procedure	1	23.0	394701000	encounters.CODE	CONCEPT_DIRECT
+4151422	Sputum examination	Measurement	SNOMED	269911007	Procedure	1	23.0	269911007	procedures.CODE	CONCEPT_DIRECT
+4148755	Patient-initiated encounter	Observation	SNOMED	270427003	Procedure	1	23.0	270427003	encounters.CODE	CONCEPT_DIRECT
+4015590	Counseling for termination of pregnancy	Procedure	SNOMED	10383002	Procedure	1	23.0	10383002	procedures.CODE	CONCEPT_DIRECT
+4104747	Physical examination, complete	Procedure	SNOMED	25656009	Procedure	1	22.0	25656009	procedures.CODE	CONCEPT_DIRECT
 4046550	Postoperative care	Observation	SNOMED	133899007	Procedure	1	22.0	133899007	procedures.CODE	CONCEPT_DIRECT
 81151	Sprain of ankle	Condition	SNOMED	44465007	Disorder	1	22.0	44465007	conditions.CODE	CONCEPT_DIRECT
-4104747	Physical examination, complete	Procedure	SNOMED	25656009	Procedure	1	22.0	25656009	procedures.CODE	CONCEPT_DIRECT
 4078199	Epidural anesthesia	Procedure	SNOMED	18946005	Procedure	1	22.0	18946005	procedures.CODE	CONCEPT_DIRECT
 40169231	120 ACTUAT fluticasone propionate 0.11 MG/ACTUAT Metered Dose Inhaler [Flovent]	Drug	RxNorm	896001	Quant Branded Drug	1	22.0	896001	medications.CODE	CONCEPT_DIRECT
+40229134	acetaminophen 21.7 MG/ML / dextromethorphan hydrobromide 1 MG/ML / doxylamine succinate 0.417 MG/ML Oral Solution	Drug	RxNorm	1043400	Clinical Drug	1	22.0	1043400	medications.CODE	CONCEPT_DIRECT
 4297090	Evaluation procedure	Procedure	SNOMED	386053000	Procedure	1	21.0	386053000	procedures.CODE	CONCEPT_DIRECT
+4234597	Misuses drugs	Condition	SNOMED	361055000	Clinical Finding	1	20.0	361055000	conditions.CODE	CONCEPT_DIRECT
+4251908	Screening surveillance	Observation	SNOMED	410410006	Procedure	1	20.0	410410006	encounters.CODE	CONCEPT_DIRECT
+75053	Fracture of bone	Condition	SNOMED	125605004	Disorder	1	20.0	125605004	conditions.CODE	CONCEPT_DIRECT
+4324693	Mammography	Procedure	SNOMED	71651007	Procedure	1	20.0	71651007	procedures.CODE	CONCEPT_DIRECT
+19073188	amoxicillin 500 MG Oral Tablet	Drug	RxNorm	308192	Clinical Drug	1	20.0	308192	medications.CODE	CONCEPT_DIRECT
+4146053	Manual pelvic examination	Procedure	SNOMED	35025007	Procedure	1	20.0	35025007	procedures.CODE	CONCEPT_DIRECT
 4150970	Medical induction of labor	Procedure	SNOMED	31208007	Procedure	1	20.0	31208007	procedures.CODE	CONCEPT_DIRECT
 4148654	Gynecology service	Observation	SNOMED	310061009	Qualifier Value	1	20.0	310061009	encounters.CODE	CONCEPT_DIRECT
-4234597	Misuses drugs	Condition	SNOMED	361055000	Clinical Finding	1	20.0	361055000	conditions.CODE	CONCEPT_DIRECT
-4324693	Mammography	Procedure	SNOMED	71651007	Procedure	1	20.0	71651007	procedures.CODE	CONCEPT_DIRECT
-75053	Fracture of bone	Condition	SNOMED	125605004	Disorder	1	20.0	125605004	conditions.CODE	CONCEPT_DIRECT
-19073188	amoxicillin 500 MG Oral Tablet	Drug	RxNorm	308192	Clinical Drug	1	20.0	308192	medications.CODE	CONCEPT_DIRECT
-4251908	Screening surveillance	Observation	SNOMED	410410006	Procedure	1	20.0	410410006	encounters.CODE	CONCEPT_DIRECT
-4146053	Manual pelvic examination	Procedure	SNOMED	35025007	Procedure	1	20.0	35025007	procedures.CODE	CONCEPT_DIRECT
-4132891	Chronic low back pain	Condition	SNOMED	278860009	Clinical Finding	1	19.0	278860009	conditions.CODE	CONCEPT_DIRECT
+19128009	{7 (ethinyl estradiol 0.01 MG Oral Tablet) / 84 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) } Pack [Seasonique]	Drug	RxNorm	749762	Branded Pack	1	19.0	749762	medications.CODE	CONCEPT_DIRECT
 19128263	{7 (ethinyl estradiol 0.035 MG / norgestimate 0.18 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.215 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.25 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack...	Drug	RxNorm	751905	Branded Pack	1	19.0	751905	medications.CODE	CONCEPT_DIRECT
 4123946	Admission to surgical department	Observation	SNOMED	305408004	Procedure	1	19.0	305408004	encounters.CODE	CONCEPT_DIRECT
-19128009	{7 (ethinyl estradiol 0.01 MG Oral Tablet) / 84 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) } Pack [Seasonique]	Drug	RxNorm	749762	Branded Pack	1	19.0	749762	medications.CODE	CONCEPT_DIRECT
+4132891	Chronic low back pain	Condition	SNOMED	278860009	Clinical Finding	1	19.0	278860009	conditions.CODE	CONCEPT_DIRECT
 40221415	{5 (dienogest 2 MG / estradiol valerate 2 MG Oral Tablet) / 17 (dienogest 3 MG / estradiol valerate 2 MG Oral Tablet) / 2 (estradiol valerate 1 MG Oral Tablet) / 2 (estradiol valerate 3 MG Oral Tablet) / 2 (inert ingredients 1 MG Oral Tablet) } Pack [N...	Drug	RxNorm	978950	Branded Pack	1	18.0	978950	medications.CODE	CONCEPT_DIRECT
-4240723	Patient discharge	Observation	SNOMED	58000006	Procedure	1	17.0	58000006	procedures.CODE	CONCEPT_DIRECT
-43532975	24 HR tacrolimus 5 MG Extended Release Oral Capsule [Astagraf]	Drug	RxNorm	1431987	Quant Branded Drug	1	17.0	1431987	medications.CODE	CONCEPT_DIRECT
-4199276	Removal of subcutaneous contraceptive	Procedure	SNOMED	301807007	Procedure	1	17.0	301807007	procedures.CODE	CONCEPT_DIRECT
 4001336	Concussion injury of brain	Condition	SNOMED	110030002	Disorder	1	17.0	110030002	conditions.CODE	CONCEPT_DIRECT
-46287738	24 HR tacrolimus 1 MG Extended Release Oral Tablet [Envarsus]	Drug	RxNorm	1664463	Quant Branded Drug	1	17.0	1664463	medications.CODE	CONCEPT_DIRECT
 19127918	{21 (ethinyl estradiol 0.03 MG / levonorgestrel 0.15 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack [Levora 0.15/30 28 Day]	Drug	RxNorm	748879	Branded Pack	1	17.0	748879	medications.CODE	CONCEPT_DIRECT
+46287738	24 HR tacrolimus 1 MG Extended Release Oral Tablet [Envarsus]	Drug	RxNorm	1664463	Quant Branded Drug	1	17.0	1664463	medications.CODE	CONCEPT_DIRECT
 436940	Metabolic syndrome X	Condition	SNOMED	237602007	Disorder	1	17.0	237602007	conditions.CODE	CONCEPT_DIRECT
+4240723	Patient discharge	Observation	SNOMED	58000006	Procedure	1	17.0	58000006	procedures.CODE	CONCEPT_DIRECT
+4199276	Removal of subcutaneous contraceptive	Procedure	SNOMED	301807007	Procedure	1	17.0	301807007	procedures.CODE	CONCEPT_DIRECT
+43532975	24 HR tacrolimus 5 MG Extended Release Oral Capsule [Astagraf]	Drug	RxNorm	1431987	Quant Branded Drug	1	17.0	1431987	medications.CODE	CONCEPT_DIRECT
 40318618	Complete miscarriage	Condition	SNOMED	156073000	Disorder	1	16.0	156073000	conditions.CODE	CONCEPT_DIRECT
 4080077	Referral to cardiology service	Observation	SNOMED	183519002	Procedure	1	15.0	183519002	procedures.CODE	CONCEPT_DIRECT
 19133905	penicillin V potassium 500 MG Oral Tablet	Drug	RxNorm	834102	Clinical Drug	1	15.0	834102	medications.CODE	CONCEPT_DIRECT
+8516	Black or African American	Race	Race	3	Race	1	15.0	black	patients.RACE	PLAIN_TEXT_MAP
 43021511	Renal disorder medication review	Procedure	SNOMED	473231009	Procedure	1	15.0	473231009	procedures.CODE	CONCEPT_DIRECT
 4060266	Antenatal RhD antibody screening	Measurement	SNOMED	169673001	Procedure	1	14.0	169673001	procedures.CODE	CONCEPT_DIRECT
-4022661	Housing problem	Observation	SNOMED	105531004	Clinical Finding	1	14.0	105531004	conditions.CODE	CONCEPT_DIRECT
 19133873	penicillin V potassium 250 MG Oral Tablet	Drug	RxNorm	834061	Clinical Drug	1	14.0	834061	medications.CODE	CONCEPT_DIRECT
+4022661	Housing problem	Observation	SNOMED	105531004	Clinical Finding	1	14.0	105531004	conditions.CODE	CONCEPT_DIRECT
 24818	Injury of neck	Condition	SNOMED	90460009	Disorder	1	14.0	90460009	conditions.CODE	CONCEPT_DIRECT
+19132304	levonorgestrel 0.000833 MG/HR Intrauterine System [Mirena]	Drug	RxNorm	807283	Branded Drug	1	14.0	807283	medications.CODE	CONCEPT_DIRECT
 4218389	Whiplash injury to neck	Condition	SNOMED	39848009	Disorder	1	14.0	39848009	conditions.CODE	CONCEPT_DIRECT
 19133679	{28 (norethindrone 0.35 MG Oral Tablet) } Pack [Errin 28 Day]	Drug	RxNorm	831533	Branded Pack	1	14.0	831533	medications.CODE	CONCEPT_DIRECT
-19132304	levonorgestrel 0.000833 MG/HR Intrauterine System [Mirena]	Drug	RxNorm	807283	Branded Drug	1	14.0	807283	medications.CODE	CONCEPT_DIRECT
-37311060	Suspected COVID-19	Observation	SNOMED	840544004	Context-dependent	1	13.0	840544004	conditions.CODE	CONCEPT_DIRECT
-4311671	Episiotomy	Procedure	SNOMED	85548006	Procedure	1	13.0	85548006	procedures.CODE	CONCEPT_DIRECT
-4033552	Patient evaluation and management	Observation	SNOMED	14736009	Procedure	1	13.0	14736009	procedures.CODE	CONCEPT_DIRECT
-78272	Sprain of wrist	Condition	SNOMED	70704007	Disorder	1	13.0	70704007	conditions.CODE	CONCEPT_DIRECT
+443614	Chronic kidney disease stage 1	Condition	SNOMED	431855005	Disorder	1	13.0	431855005	conditions.CODE	CONCEPT_DIRECT
 437663	Fever	Condition	SNOMED	386661006	Clinical Finding	1	13.0	386661006	conditions.CODE	CONCEPT_DIRECT
+4170947	Bone immobilization	Procedure	SNOMED	274474001	Procedure	1	13.0	274474001	procedures.CODE	CONCEPT_DIRECT
 4264167	Taking patient vital signs	Measurement	SNOMED	61746007	Procedure	1	13.0	61746007	procedures.CODE	CONCEPT_DIRECT
 4209883	Drug rehabilitation and detoxification	Procedure	SNOMED	56876005	Procedure	1	13.0	56876005	encounters.CODE	CONCEPT_DIRECT
-443614	Chronic kidney disease stage 1	Condition	SNOMED	431855005	Disorder	1	13.0	431855005	conditions.CODE	CONCEPT_DIRECT
-4170947	Bone immobilization	Procedure	SNOMED	274474001	Procedure	1	13.0	274474001	procedures.CODE	CONCEPT_DIRECT
-443601	Chronic kidney disease stage 2	Condition	SNOMED	431856006	Disorder	1	13.0	431856006	conditions.CODE	CONCEPT_DIRECT
 138790	Chronic periodontitis	Condition	SNOMED	5689008	Disorder	1	13.0	5689008	conditions.CODE	CONCEPT_DIRECT
-4296519	Triage: emergency center	Procedure	SNOMED	386478007	Procedure	1	13.0	386478007	procedures.CODE	CONCEPT_DIRECT
 4126216	Face mask	Device	SNOMED	261352009	Physical Object	1	13.0	261352009	procedures.CODE	CONCEPT_DIRECT
+4296519	Triage: emergency center	Procedure	SNOMED	386478007	Procedure	1	13.0	386478007	procedures.CODE	CONCEPT_DIRECT
+443601	Chronic kidney disease stage 2	Condition	SNOMED	431856006	Disorder	1	13.0	431856006	conditions.CODE	CONCEPT_DIRECT
 37160948	Accretion on tooth	Condition	SNOMED	1172608001	Disorder	1	13.0	1172608001	conditions.CODE	CONCEPT_DIRECT
-43012433	21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System [NuvaRing]	Drug	RxNorm	1367439	Quant Branded Drug	1	12.0	1367439	medications.CODE	CONCEPT_DIRECT
-435081	Abnormal findings diagnostic imaging heart+coronary circulat	Condition	SNOMED	274531002	Clinical Finding	1	12.0	274531002	conditions.CODE	CONCEPT_DIRECT
+37311060	Suspected COVID-19	Observation	SNOMED	840544004	Context-dependent	1	13.0	840544004	conditions.CODE	CONCEPT_DIRECT
+4311671	Episiotomy	Procedure	SNOMED	85548006	Procedure	1	13.0	85548006	procedures.CODE	CONCEPT_DIRECT
+78272	Sprain of wrist	Condition	SNOMED	70704007	Disorder	1	13.0	70704007	conditions.CODE	CONCEPT_DIRECT
+4033552	Patient evaluation and management	Observation	SNOMED	14736009	Procedure	1	13.0	14736009	procedures.CODE	CONCEPT_DIRECT
 19134047	tramadol hydrochloride 50 MG Oral Tablet	Drug	RxNorm	835603	Clinical Drug	1	12.0	835603	medications.CODE	CONCEPT_DIRECT
+37311061	COVID-19	Condition	SNOMED	840539006	Disorder	1	12.0	840539006	conditions.CODE	CONCEPT_DIRECT
+45769905	Microalbuminuria due to type 2 diabetes mellitus	Condition	SNOMED	90781000119102	Disorder	1	12.0	90781000119102	conditions.CODE	CONCEPT_DIRECT
 138176	Acute gingivitis	Condition	SNOMED	31642005	Disorder	1	12.0	31642005	conditions.CODE	CONCEPT_DIRECT
 4168004	Burn injury	Observation	SNOMED	48333001	Morph Abnormality	1	12.0	48333001	conditions.CODE	CONCEPT_DIRECT
-45769905	Microalbuminuria due to type 2 diabetes mellitus	Condition	SNOMED	90781000119102	Disorder	1	12.0	90781000119102	conditions.CODE	CONCEPT_DIRECT
-37311061	COVID-19	Condition	SNOMED	840539006	Disorder	1	12.0	840539006	conditions.CODE	CONCEPT_DIRECT
-4142645	Angiography of coronary artery	Procedure	SNOMED	33367005	Procedure	1	12.0	33367005	procedures.CODE	CONCEPT_DIRECT
 4185932	Ischemic heart disease	Condition	SNOMED	414545008	Disorder	1	12.0	414545008	conditions.CODE	CONCEPT_DIRECT
+4142645	Angiography of coronary artery	Procedure	SNOMED	33367005	Procedure	1	12.0	33367005	procedures.CODE	CONCEPT_DIRECT
 192279	Disorder of kidney due to diabetes mellitus	Condition	SNOMED	127013003	Disorder	1	12.0	127013003	conditions.CODE	CONCEPT_DIRECT
-134398	Periodontal disease	Condition	SNOMED	2556008	Disorder	1	12.0	2556008	conditions.CODE	CONCEPT_DIRECT
 19075601	clopidogrel 75 MG Oral Tablet	Drug	RxNorm	309362	Clinical Drug	1	12.0	309362	medications.CODE	CONCEPT_DIRECT
-432867	Hyperlipidemia	Condition	SNOMED	55822004	Disorder	1	11.0	55822004	conditions.CODE	CONCEPT_DIRECT
-378001	Concussion with no loss of consciousness	Condition	SNOMED	62106007	Disorder	1	11.0	62106007	conditions.CODE	CONCEPT_DIRECT
-1539411	simvastatin 20 MG Oral Tablet	Drug	RxNorm	312961	Clinical Drug	1	11.0	312961	medications.CODE	CONCEPT_DIRECT
-40166824	24 HR metoprolol succinate 100 MG Extended Release Oral Tablet	Drug	RxNorm	866412	Quant Clinical Drug	1	11.0	866412	medications.CODE	CONCEPT_DIRECT
+134398	Periodontal disease	Condition	SNOMED	2556008	Disorder	1	12.0	2556008	conditions.CODE	CONCEPT_DIRECT
+435081	Abnormal findings diagnostic imaging heart+coronary circulat	Condition	SNOMED	274531002	Clinical Finding	1	12.0	274531002	conditions.CODE	CONCEPT_DIRECT
+43012433	21 DAY ethinyl estradiol 0.000625 MG/HR / etonogestrel 0.005 MG/HR Vaginal System [NuvaRing]	Drug	RxNorm	1367439	Quant Branded Drug	1	12.0	1367439	medications.CODE	CONCEPT_DIRECT
 4209346	Discussion about pregnancy	Procedure	SNOMED	440546007	Procedure	1	11.0	440546007	procedures.CODE	CONCEPT_DIRECT
-19126352	nitroglycerin 0.4 MG/ACTUAT Mucosal Spray	Drug	RxNorm	705129	Clinical Drug	1	11.0	705129	medications.CODE	CONCEPT_DIRECT
+40166824	24 HR metoprolol succinate 100 MG Extended Release Oral Tablet	Drug	RxNorm	866412	Quant Clinical Drug	1	11.0	866412	medications.CODE	CONCEPT_DIRECT
+378001	Concussion with no loss of consciousness	Condition	SNOMED	62106007	Disorder	1	11.0	62106007	conditions.CODE	CONCEPT_DIRECT
+432867	Hyperlipidemia	Condition	SNOMED	55822004	Disorder	1	11.0	55822004	conditions.CODE	CONCEPT_DIRECT
+1539411	simvastatin 20 MG Oral Tablet	Drug	RxNorm	312961	Clinical Drug	1	11.0	312961	medications.CODE	CONCEPT_DIRECT
 46234346	nitrofurantoin, macrocrystals 25 MG / nitrofurantoin, monohydrate 75 MG Oral Capsule	Drug	RxNorm	1648755	Clinical Drug	1	11.0	1648755	medications.CODE	CONCEPT_DIRECT
-4088396	Notifications	Observation	SNOMED	185087000	Procedure	1	10.0	185087000	procedures.CODE	CONCEPT_DIRECT
-254761	Cough	Condition	SNOMED	49727002	Clinical Finding	1	10.0	49727002	conditions.CODE	CONCEPT_DIRECT
+19126352	nitroglycerin 0.4 MG/ACTUAT Mucosal Spray	Drug	RxNorm	705129	Clinical Drug	1	11.0	705129	medications.CODE	CONCEPT_DIRECT
 42537054	Post anesthesia care management	Procedure	SNOMED	736169004	Procedure	1	10.0	736169004	procedures.CODE	CONCEPT_DIRECT
 37017222	Lack of access to transportation	Observation	SNOMED	713458007	Clinical Finding	1	10.0	713458007	conditions.CODE	CONCEPT_DIRECT
-4296204	Epidermal burn of skin	Condition	SNOMED	403190006	Disorder	1	10.0	403190006	conditions.CODE	CONCEPT_DIRECT
-4086788	Sterilization requested	Observation	SNOMED	183996000	Context-dependent	1	10.0	183996000	conditions.CODE	CONCEPT_DIRECT
+4088396	Notifications	Observation	SNOMED	185087000	Procedure	1	10.0	185087000	procedures.CODE	CONCEPT_DIRECT
+254761	Cough	Condition	SNOMED	49727002	Clinical Finding	1	10.0	49727002	conditions.CODE	CONCEPT_DIRECT
 4148832	Certification procedure	Observation	SNOMED	310417005	Procedure	1	10.0	310417005	procedures.CODE	CONCEPT_DIRECT
+4086788	Sterilization requested	Observation	SNOMED	183996000	Context-dependent	1	10.0	183996000	conditions.CODE	CONCEPT_DIRECT
+4296204	Epidermal burn of skin	Condition	SNOMED	403190006	Disorder	1	10.0	403190006	conditions.CODE	CONCEPT_DIRECT
 137613	Eclampsia in pregnancy	Condition	SNOMED	198992004	Disorder	1	10.0	198992004	conditions.CODE	CONCEPT_DIRECT
 4123927	Admission to hospice	Observation	SNOMED	305336008	Procedure	1	10.0	305336008	encounters.CODE	CONCEPT_DIRECT
 4141789	Transport problem	Observation	SNOMED	266934004	Clinical Finding	1	10.0	266934004	conditions.CODE	CONCEPT_DIRECT
-4117038	Ligation of bilateral fallopian tubes	Procedure	SNOMED	287664005	Procedure	1	9.0	287664005	procedures.CODE	CONCEPT_DIRECT
 4323715	Transfusion of packed red blood cells	Procedure	SNOMED	71493000	Procedure	1	9.0	71493000	procedures.CODE	CONCEPT_DIRECT
 45757499	Proteinuria due to type 2 diabetes mellitus	Condition	SNOMED	157141000119108	Disorder	1	9.0	157141000119108	conditions.CODE	CONCEPT_DIRECT
-44816277	168 HR ethinyl estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System	Drug	RxNorm	1534809	Quant Clinical Drug	1	9.0	1534809	medications.CODE	CONCEPT_DIRECT
 4152041	Sterilization education	Observation	SNOMED	268533009	Procedure	1	9.0	268533009	procedures.CODE	CONCEPT_DIRECT
-4194254	Care regimes assessment	Procedure	SNOMED	392091000	Procedure	1	9.0	392091000	procedures.CODE	CONCEPT_DIRECT
-4283893	Sinusitis	Condition	SNOMED	36971009	Disorder	1	9.0	36971009	conditions.CODE	CONCEPT_DIRECT
-4191853	Allergy screening test	Measurement	SNOMED	395142003	Procedure	1	9.0	395142003	procedures.CODE	CONCEPT_DIRECT
+44816277	168 HR ethinyl estradiol 0.00146 MG/HR / norelgestromin 0.00625 MG/HR Transdermal System	Drug	RxNorm	1534809	Quant Clinical Drug	1	9.0	1534809	medications.CODE	CONCEPT_DIRECT
 439393	Pre-eclampsia	Condition	SNOMED	398254007	Disorder	1	9.0	398254007	conditions.CODE	CONCEPT_DIRECT
+4191853	Allergy screening test	Measurement	SNOMED	395142003	Procedure	1	9.0	395142003	procedures.CODE	CONCEPT_DIRECT
+4283893	Sinusitis	Condition	SNOMED	36971009	Disorder	1	9.0	36971009	conditions.CODE	CONCEPT_DIRECT
+4194254	Care regimes assessment	Procedure	SNOMED	392091000	Procedure	1	9.0	392091000	procedures.CODE	CONCEPT_DIRECT
 4128031	Instrumental delivery	Procedure	SNOMED	236974004	Procedure	1	9.0	236974004	procedures.CODE	CONCEPT_DIRECT
-1786652	cephalexin 500 MG Oral Tablet	Drug	RxNorm	197454	Clinical Drug	1	9.0	197454	medications.CODE	CONCEPT_DIRECT
 43530622	Chronic neck pain	Condition	SNOMED	1121000119107	Clinical Finding	1	9.0	1121000119107	conditions.CODE	CONCEPT_DIRECT
 4205519	Death certification	Observation	SNOMED	308646001	Procedure	1	9.0	308646001	encounters.CODE	CONCEPT_DIRECT
-4166761	Rectal polypectomy	Procedure	SNOMED	274031008	Procedure	1	8.0	274031008	procedures.CODE	CONCEPT_DIRECT
-201826	Type 2 diabetes mellitus	Condition	SNOMED	44054006	Disorder	1	8.0	44054006	conditions.CODE	CONCEPT_DIRECT
-1344909	carboplatin 10 MG/ML Injectable Solution	Drug	RxNorm	597195	Clinical Drug	1	8.0	597195	medications.CODE	CONCEPT_DIRECT
+1786652	cephalexin 500 MG Oral Tablet	Drug	RxNorm	197454	Clinical Drug	1	9.0	197454	medications.CODE	CONCEPT_DIRECT
+4117038	Ligation of bilateral fallopian tubes	Procedure	SNOMED	287664005	Procedure	1	9.0	287664005	procedures.CODE	CONCEPT_DIRECT
+8515	Asian	Race	Race	2	Race	1	9.0	asian	patients.RACE	PLAIN_TEXT_MAP
 444132	Injury of knee	Condition	SNOMED	125601008	Disorder	1	8.0	125601008	conditions.CODE	CONCEPT_DIRECT
+1344909	carboplatin 10 MG/ML Injectable Solution	Drug	RxNorm	597195	Clinical Drug	1	8.0	597195	medications.CODE	CONCEPT_DIRECT
+1594382	NDA020800 0.3 ML epinephrine 1 MG/ML Auto-Injector	Drug	RxNorm	1870230	Clinical Drug	1	8.0	1870230	medications.CODE	CONCEPT_DIRECT
 4072733	Only received primary school education	Observation	SNOMED	224295006	Clinical Finding	1	8.0	224295006	conditions.CODE	CONCEPT_DIRECT
-4262136	Blighted ovum	Condition	SNOMED	35999006	Disorder	1	8.0	35999006	conditions.CODE	CONCEPT_DIRECT
+4273629	Chemotherapy	Procedure	SNOMED	367336001	Procedure	1	8.0	367336001	procedures.CODE	CONCEPT_DIRECT
 4156265	Facial laceration	Condition	SNOMED	370247008	Disorder	1	8.0	370247008	conditions.CODE	CONCEPT_DIRECT
 443597	Chronic kidney disease stage 3	Condition	SNOMED	433144002	Disorder	1	8.0	433144002	conditions.CODE	CONCEPT_DIRECT
+4262136	Blighted ovum	Condition	SNOMED	35999006	Disorder	1	8.0	35999006	conditions.CODE	CONCEPT_DIRECT
 4109685	Laceration of foot	Condition	SNOMED	284551006	Disorder	1	8.0	284551006	conditions.CODE	CONCEPT_DIRECT
-4273629	Chemotherapy	Procedure	SNOMED	367336001	Procedure	1	8.0	367336001	procedures.CODE	CONCEPT_DIRECT
-1594382	NDA020800 0.3 ML epinephrine 1 MG/ML Auto-Injector	Drug	RxNorm	1870230	Clinical Drug	1	8.0	1870230	medications.CODE	CONCEPT_DIRECT
-4127260	Augmentation of labor	Procedure	SNOMED	237001001	Procedure	1	8.0	237001001	procedures.CODE	CONCEPT_DIRECT
 201603	Disorder of teeth AND/OR supporting structures	Condition	SNOMED	105995000	Disorder	1	8.0	105995000	conditions.CODE	CONCEPT_DIRECT
-4139064	Admission to orthopedic department	Observation	SNOMED	305428000	Procedure	1	7.0	305428000	procedures.CODE	CONCEPT_DIRECT
-4155034	Laceration of forearm	Condition	SNOMED	283371005	Disorder	1	7.0	283371005	conditions.CODE	CONCEPT_DIRECT
-4216130	Percutaneous coronary intervention	Procedure	SNOMED	415070008	Procedure	1	7.0	415070008	procedures.CODE	CONCEPT_DIRECT
-4294548	Acute bacterial sinusitis	Condition	SNOMED	75498004	Disorder	1	7.0	75498004	conditions.CODE	CONCEPT_DIRECT
-4141847	Referral to transplant surgeon	Observation	SNOMED	306316000	Procedure	1	7.0	306316000	procedures.CODE	CONCEPT_DIRECT
-45757234	Dental caries on smooth surface penetrating into dentin	Condition	SNOMED	1085991000119107	Disorder	1	7.0	1085991000119107	conditions.CODE	CONCEPT_DIRECT
-40162522	acetaminophen 325 MG / hydrocodone bitartrate 7.5 MG Oral Tablet	Drug	RxNorm	857005	Clinical Drug	1	7.0	857005	medications.CODE	CONCEPT_DIRECT
-4120314	Hypertriglyceridemia	Condition	SNOMED	302870006	Disorder	1	7.0	302870006	conditions.CODE	CONCEPT_DIRECT
+4127260	Augmentation of labor	Procedure	SNOMED	237001001	Procedure	1	8.0	237001001	procedures.CODE	CONCEPT_DIRECT
+201826	Type 2 diabetes mellitus	Condition	SNOMED	44054006	Disorder	1	8.0	44054006	conditions.CODE	CONCEPT_DIRECT
+4166761	Rectal polypectomy	Procedure	SNOMED	274031008	Procedure	1	8.0	274031008	procedures.CODE	CONCEPT_DIRECT
 4285898	Polyp of colon	Condition	SNOMED	68496003	Disorder	1	7.0	68496003	conditions.CODE	CONCEPT_DIRECT
-4276519	Extraction of wisdom tooth	Procedure	SNOMED	65546002	Procedure	1	7.0	65546002	procedures.CODE	CONCEPT_DIRECT
 4018619	Screening for occult blood in feces	Measurement	SNOMED	104435004	Procedure	1	7.0	104435004	procedures.CODE	CONCEPT_DIRECT
-40160997	1 ML enoxaparin sodium 150 MG/ML Prefilled Syringe	Drug	RxNorm	854252	Quant Clinical Drug	1	7.0	854252	medications.CODE	CONCEPT_DIRECT
+4276519	Extraction of wisdom tooth	Procedure	SNOMED	65546002	Procedure	1	7.0	65546002	procedures.CODE	CONCEPT_DIRECT
 4015701	Cesarean section	Procedure	SNOMED	11466000	Procedure	1	7.0	11466000	procedures.CODE	CONCEPT_DIRECT
 4293740	Injection of tetanus antitoxin	Procedure	SNOMED	384700001	Procedure	1	7.0	384700001	procedures.CODE	CONCEPT_DIRECT
-4289517	Loss of taste	Condition	SNOMED	36955009	Clinical Finding	1	7.0	36955009	conditions.CODE	CONCEPT_DIRECT
-4079617	Emergency hospital admission	Observation	SNOMED	183452005	Procedure	1	7.0	183452005	encounters.CODE	CONCEPT_DIRECT
+40160997	1 ML enoxaparin sodium 150 MG/ML Prefilled Syringe	Drug	RxNorm	854252	Quant Clinical Drug	1	7.0	854252	medications.CODE	CONCEPT_DIRECT
 44784262	Awaiting transplantation of kidney	Observation	SNOMED	698306007	Context-dependent	1	7.0	698306007	conditions.CODE	CONCEPT_DIRECT
 4181917	Electroencephalogram	Procedure	SNOMED	54550000	Procedure	1	7.0	54550000	procedures.CODE	CONCEPT_DIRECT
-4113008	Laceration of hand	Condition	SNOMED	284549007	Disorder	1	6.0	284549007	conditions.CODE	CONCEPT_DIRECT
-40231925	acetaminophen 325 MG / oxycodone hydrochloride 5 MG Oral Tablet	Drug	RxNorm	1049221	Clinical Drug	1	6.0	1049221	medications.CODE	CONCEPT_DIRECT
-44783196	Surgical manipulation of joint of knee	Procedure	SNOMED	699253003	Procedure	1	6.0	699253003	procedures.CODE	CONCEPT_DIRECT
-4058899	Plain X-ray of clavicle	Procedure	SNOMED	168594001	Procedure	1	6.0	168594001	procedures.CODE	CONCEPT_DIRECT
-1503184	mestranol	Drug	RxNorm	6782	Ingredient	1	6.0	235389	medications.CODE	MAPS_TO
+4079617	Emergency hospital admission	Observation	SNOMED	183452005	Procedure	1	7.0	183452005	encounters.CODE	CONCEPT_DIRECT
+4289517	Loss of taste	Condition	SNOMED	36955009	Clinical Finding	1	7.0	36955009	conditions.CODE	CONCEPT_DIRECT
+4216130	Percutaneous coronary intervention	Procedure	SNOMED	415070008	Procedure	1	7.0	415070008	procedures.CODE	CONCEPT_DIRECT
+40162522	acetaminophen 325 MG / hydrocodone bitartrate 7.5 MG Oral Tablet	Drug	RxNorm	857005	Clinical Drug	1	7.0	857005	medications.CODE	CONCEPT_DIRECT
+4120314	Hypertriglyceridemia	Condition	SNOMED	302870006	Disorder	1	7.0	302870006	conditions.CODE	CONCEPT_DIRECT
+4155034	Laceration of forearm	Condition	SNOMED	283371005	Disorder	1	7.0	283371005	conditions.CODE	CONCEPT_DIRECT
+4294548	Acute bacterial sinusitis	Condition	SNOMED	75498004	Disorder	1	7.0	75498004	conditions.CODE	CONCEPT_DIRECT
+4139064	Admission to orthopedic department	Observation	SNOMED	305428000	Procedure	1	7.0	305428000	procedures.CODE	CONCEPT_DIRECT
+4141847	Referral to transplant surgeon	Observation	SNOMED	306316000	Procedure	1	7.0	306316000	procedures.CODE	CONCEPT_DIRECT
+45757234	Dental caries on smooth surface penetrating into dentin	Condition	SNOMED	1085991000119107	Disorder	1	7.0	1085991000119107	conditions.CODE	CONCEPT_DIRECT
 45757235	Dental caries on smooth surface penetrating into pulp	Condition	SNOMED	1086001000119108	Disorder	1	6.0	1086001000119108	conditions.CODE	CONCEPT_DIRECT
+1503184	mestranol	Drug	RxNorm	6782	Ingredient	1	6.0	235389	medications.CODE	MAPS_TO
 4084675	Non-urgent orthopedic admission	Observation	SNOMED	183495009	Procedure	1	6.0	183495009	encounters.CODE	CONCEPT_DIRECT
 4210433	Information gathering	Observation	SNOMED	311791003	Procedure	1	6.0	311791003	procedures.CODE	CONCEPT_DIRECT
 4237458	Fracture of clavicle	Condition	SNOMED	58150001	Disorder	1	6.0	58150001	conditions.CODE	CONCEPT_DIRECT
-4018483	Domiciliary or rest home patient evaluation and management	Observation	SNOMED	210098006	Procedure	1	6.0	210098006	encounters.CODE	CONCEPT_DIRECT
 443612	Chronic kidney disease stage 4	Condition	SNOMED	431857002	Disorder	1	6.0	431857002	conditions.CODE	CONCEPT_DIRECT
-43530652	Chronic intractable migraine without aura	Condition	SNOMED	124171000119105	Disorder	1	5.0	124171000119105	conditions.CODE	CONCEPT_DIRECT
-40405599	Fibromyalgia	Condition	SNOMED	203082005	Disorder	1	5.0	203082005	conditions.CODE	CONCEPT_DIRECT
-35605482	2 ML ondansetron 2 MG/ML Injection	Drug	RxNorm	1740467	Quant Clinical Drug	1	5.0	1740467	medications.CODE	CONCEPT_DIRECT
-4186930	Replacement of intrauterine contraceptive device	Procedure	SNOMED	46706006	Procedure	1	5.0	46706006	procedures.CODE	CONCEPT_DIRECT
-4090980	Stair-climbing test	Procedure	SNOMED	252482003	Procedure	1	5.0	252482003	procedures.CODE	CONCEPT_DIRECT
-4202832	Intubation	Procedure	SNOMED	52765003	Procedure	1	5.0	52765003	procedures.CODE	CONCEPT_DIRECT
-4059173	Fracture of ankle	Condition	SNOMED	16114001	Disorder	1	5.0	16114001	conditions.CODE	CONCEPT_DIRECT
-4213288	Insertion of catheter into artery	Procedure	SNOMED	392247006	Procedure	1	5.0	392247006	procedures.CODE	CONCEPT_DIRECT
-4279768	Pulmonary catheterization with Swan-Ganz catheter	Procedure	SNOMED	65677008	Procedure	1	5.0	65677008	procedures.CODE	CONCEPT_DIRECT
-4265599	Patient transfer to intensive care unit	Observation	SNOMED	397821002	Procedure	1	5.0	397821002	encounters.CODE	CONCEPT_DIRECT
-4055248	Postoperative procedure education	Observation	SNOMED	243063003	Procedure	1	5.0	243063003	procedures.CODE	CONCEPT_DIRECT
+4018483	Domiciliary or rest home patient evaluation and management	Observation	SNOMED	210098006	Procedure	1	6.0	210098006	encounters.CODE	CONCEPT_DIRECT
+4113008	Laceration of hand	Condition	SNOMED	284549007	Disorder	1	6.0	284549007	conditions.CODE	CONCEPT_DIRECT
+40231925	acetaminophen 325 MG / oxycodone hydrochloride 5 MG Oral Tablet	Drug	RxNorm	1049221	Clinical Drug	1	6.0	1049221	medications.CODE	CONCEPT_DIRECT
+8657	American Indian or Alaska Native	Race	Race	1	Race	1	6.0	hawaiian	patients.RACE	PLAIN_TEXT_MAP
+44783196	Surgical manipulation of joint of knee	Procedure	SNOMED	699253003	Procedure	1	6.0	699253003	procedures.CODE	CONCEPT_DIRECT
+4058899	Plain X-ray of clavicle	Procedure	SNOMED	168594001	Procedure	1	6.0	168594001	procedures.CODE	CONCEPT_DIRECT
 4223659	Fatigue	Observation	SNOMED	84229001	Clinical Finding	1	5.0	84229001	conditions.CODE	CONCEPT_DIRECT
-77074	Pain of joint	Condition	SNOMED	57676002	Clinical Finding	1	5.0	57676002	conditions.CODE	CONCEPT_DIRECT
-4259432	Home visit	Observation	SNOMED	439708006	Procedure	1	5.0	439708006	encounters.CODE	CONCEPT_DIRECT
-4230911	Echocardiography	Procedure	SNOMED	40701008	Procedure	1	5.0	40701008	procedures.CODE	CONCEPT_DIRECT
 40479768	Injury of anterior cruciate ligament	Condition	SNOMED	444470001	Disorder	1	5.0	444470001	conditions.CODE	CONCEPT_DIRECT
-4138931	Admission to ward	Observation	SNOMED	305342007	Procedure	1	5.0	305342007	encounters.CODE	CONCEPT_DIRECT
-19128022	{7 (ethinyl estradiol 0.035 MG / norgestimate 0.18 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.215 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.25 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack...	Drug	RxNorm	749785	Branded Pack	1	5.0	749785	medications.CODE	CONCEPT_DIRECT
-19073183	amoxicillin 250 MG Oral Capsule	Drug	RxNorm	308182	Clinical Drug	1	5.0	308182	medications.CODE	CONCEPT_DIRECT
 4130003	Documentation procedure	Observation	SNOMED	23745001	Procedure	1	5.0	23745001	procedures.CODE	CONCEPT_DIRECT
+4138931	Admission to ward	Observation	SNOMED	305342007	Procedure	1	5.0	305342007	encounters.CODE	CONCEPT_DIRECT
+19073183	amoxicillin 250 MG Oral Capsule	Drug	RxNorm	308182	Clinical Drug	1	5.0	308182	medications.CODE	CONCEPT_DIRECT
+19128022	{7 (ethinyl estradiol 0.035 MG / norgestimate 0.18 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.215 MG Oral Tablet) / 7 (ethinyl estradiol 0.035 MG / norgestimate 0.25 MG Oral Tablet) / 7 (inert ingredients 1 MG Oral Tablet) } Pack...	Drug	RxNorm	749785	Branded Pack	1	5.0	749785	medications.CODE	CONCEPT_DIRECT
+4259432	Home visit	Observation	SNOMED	439708006	Procedure	1	5.0	439708006	encounters.CODE	CONCEPT_DIRECT
+77074	Pain of joint	Condition	SNOMED	57676002	Clinical Finding	1	5.0	57676002	conditions.CODE	CONCEPT_DIRECT
+4230911	Echocardiography	Procedure	SNOMED	40701008	Procedure	1	5.0	40701008	procedures.CODE	CONCEPT_DIRECT
+42707627	rocuronium bromide 10 MG/ML Injectable Solution	Drug	RxNorm	1234995	Clinical Drug	1	5.0	1234995	medications.CODE	CONCEPT_DIRECT
+46275507	1 ML heparin sodium, porcine 5000 UNT/ML Injection	Drug	RxNorm	1659263	Quant Clinical Drug	1	5.0	1659263	medications.CODE	CONCEPT_DIRECT
+4132624	Scheduling	Observation	SNOMED	410538000	Procedure	1	5.0	410538000	procedures.CODE	CONCEPT_DIRECT
+4231751	Median sternotomy	Procedure	SNOMED	359672006	Procedure	1	5.0	359672006	procedures.CODE	CONCEPT_DIRECT
+4005821	Pre-surgery testing	Procedure	SNOMED	110467000	Procedure	1	5.0	110467000	procedures.CODE	CONCEPT_DIRECT
 4084213	Referral for further care	Observation	SNOMED	183444007	Procedure	1	5.0	183444007	procedures.CODE	CONCEPT_DIRECT
 19075001	cefuroxime 250 MG Oral Tablet	Drug	RxNorm	309097	Clinical Drug	1	5.0	309097	medications.CODE	CONCEPT_DIRECT
-42707627	rocuronium bromide 10 MG/ML Injectable Solution	Drug	RxNorm	1234995	Clinical Drug	1	5.0	1234995	medications.CODE	CONCEPT_DIRECT
-4005821	Pre-surgery testing	Procedure	SNOMED	110467000	Procedure	1	5.0	110467000	procedures.CODE	CONCEPT_DIRECT
-4132624	Scheduling	Observation	SNOMED	410538000	Procedure	1	5.0	410538000	procedures.CODE	CONCEPT_DIRECT
-4075193	Preparation of patient for procedure	Observation	SNOMED	223495004	Procedure	1	5.0	223495004	procedures.CODE	CONCEPT_DIRECT
-46275507	1 ML heparin sodium, porcine 5000 UNT/ML Injection	Drug	RxNorm	1659263	Quant Clinical Drug	1	5.0	1659263	medications.CODE	CONCEPT_DIRECT
 4150627	Removal of endotracheal tube	Procedure	SNOMED	271280005	Procedure	1	5.0	271280005	procedures.CODE	CONCEPT_DIRECT
-4231751	Median sternotomy	Procedure	SNOMED	359672006	Procedure	1	5.0	359672006	procedures.CODE	CONCEPT_DIRECT
-36249936	25 ML protamine sulfate (USP) 10 MG/ML Injection	Drug	RxNorm	1796676	Quant Clinical Drug	1	5.0	1796676	medications.CODE	CONCEPT_DIRECT
-4138651	Referral to cardiac surgery service	Observation	SNOMED	306185001	Procedure	1	5.0	306185001	procedures.CODE	CONCEPT_DIRECT
-40220386	100 ML propofol 10 MG/ML Injection	Drug	RxNorm	1808217	Quant Clinical Drug	1	5.0	1808217	medications.CODE	CONCEPT_DIRECT
-4142136	Discharge to ward	Observation	SNOMED	306706006	Procedure	1	5.0	306706006	procedures.CODE	CONCEPT_DIRECT
-4203130	Discharge from hospital	Observation	SNOMED	308283009	Procedure	1	5.0	308283009	procedures.CODE	CONCEPT_DIRECT
-46287345	cefazolin 2000 MG Injection	Drug	RxNorm	1665060	Clinical Drug	1	5.0	1665060	medications.CODE	CONCEPT_DIRECT
+4075193	Preparation of patient for procedure	Observation	SNOMED	223495004	Procedure	1	5.0	223495004	procedures.CODE	CONCEPT_DIRECT
 4089228	Sputum finding	Observation	SNOMED	248595008	Clinical Finding	1	5.0	248595008	conditions.CODE	CONCEPT_DIRECT
+46271099	Notification of treatment plan	Observation	SNOMED	709138001	Procedure	1	5.0	709138001	procedures.CODE	CONCEPT_DIRECT
 442752	Muscle pain	Condition	SNOMED	68962001	Clinical Finding	1	5.0	68962001	conditions.CODE	CONCEPT_DIRECT
 4121310	Walking exercise test	Procedure	SNOMED	302761001	Procedure	1	5.0	302761001	procedures.CODE	CONCEPT_DIRECT
-46271099	Notification of treatment plan	Observation	SNOMED	709138001	Procedure	1	5.0	709138001	procedures.CODE	CONCEPT_DIRECT
+4138651	Referral to cardiac surgery service	Observation	SNOMED	306185001	Procedure	1	5.0	306185001	procedures.CODE	CONCEPT_DIRECT
+4142136	Discharge to ward	Observation	SNOMED	306706006	Procedure	1	5.0	306706006	procedures.CODE	CONCEPT_DIRECT
+4203130	Discharge from hospital	Observation	SNOMED	308283009	Procedure	1	5.0	308283009	procedures.CODE	CONCEPT_DIRECT
 964261	vitamin B12 5 MG/ML Injectable Solution	Drug	RxNorm	2001499	Clinical Drug	1	5.0	2001499	medications.CODE	CONCEPT_DIRECT
-40486164	Transfer to stepdown unit	Observation	SNOMED	449214001	Procedure	1	4.0	449214001	procedures.CODE	CONCEPT_DIRECT
-199076	Tubal pregnancy	Condition	SNOMED	79586000	Disorder	1	4.0	79586000	conditions.CODE	CONCEPT_DIRECT
-4062206	Allergic disorder initial assessment	Observation	SNOMED	170837001	Procedure	1	4.0	170837001	encounters.CODE	CONCEPT_DIRECT
-4056621	Recurrent urinary tract infection	Condition	SNOMED	197927001	Disorder	1	4.0	197927001	conditions.CODE	CONCEPT_DIRECT
-45768754	Generalized chronic periodontitis	Condition	SNOMED	707251008	Disorder	1	4.0	707251008	conditions.CODE	CONCEPT_DIRECT
-4224646	Miscarriage in second trimester	Condition	SNOMED	85116003	Disorder	1	4.0	85116003	conditions.CODE	CONCEPT_DIRECT
-4127601	Referral to service	Observation	SNOMED	306206005	Procedure	1	4.0	306206005	procedures.CODE	CONCEPT_DIRECT
+40220386	100 ML propofol 10 MG/ML Injection	Drug	RxNorm	1808217	Quant Clinical Drug	1	5.0	1808217	medications.CODE	CONCEPT_DIRECT
+36249936	25 ML protamine sulfate (USP) 10 MG/ML Injection	Drug	RxNorm	1796676	Quant Clinical Drug	1	5.0	1796676	medications.CODE	CONCEPT_DIRECT
+46287345	cefazolin 2000 MG Injection	Drug	RxNorm	1665060	Clinical Drug	1	5.0	1665060	medications.CODE	CONCEPT_DIRECT
+4090980	Stair-climbing test	Procedure	SNOMED	252482003	Procedure	1	5.0	252482003	procedures.CODE	CONCEPT_DIRECT
+4186930	Replacement of intrauterine contraceptive device	Procedure	SNOMED	46706006	Procedure	1	5.0	46706006	procedures.CODE	CONCEPT_DIRECT
+4202832	Intubation	Procedure	SNOMED	52765003	Procedure	1	5.0	52765003	procedures.CODE	CONCEPT_DIRECT
+4055248	Postoperative procedure education	Observation	SNOMED	243063003	Procedure	1	5.0	243063003	procedures.CODE	CONCEPT_DIRECT
+43530652	Chronic intractable migraine without aura	Condition	SNOMED	124171000119105	Disorder	1	5.0	124171000119105	conditions.CODE	CONCEPT_DIRECT
+4279768	Pulmonary catheterization with Swan-Ganz catheter	Procedure	SNOMED	65677008	Procedure	1	5.0	65677008	procedures.CODE	CONCEPT_DIRECT
+4059173	Fracture of ankle	Condition	SNOMED	16114001	Disorder	1	5.0	16114001	conditions.CODE	CONCEPT_DIRECT
+40405599	Fibromyalgia	Condition	SNOMED	203082005	Disorder	1	5.0	203082005	conditions.CODE	CONCEPT_DIRECT
+4213288	Insertion of catheter into artery	Procedure	SNOMED	392247006	Procedure	1	5.0	392247006	procedures.CODE	CONCEPT_DIRECT
+4265599	Patient transfer to intensive care unit	Observation	SNOMED	397821002	Procedure	1	5.0	397821002	encounters.CODE	CONCEPT_DIRECT
+35605482	2 ML ondansetron 2 MG/ML Injection	Drug	RxNorm	1740467	Quant Clinical Drug	1	5.0	1740467	medications.CODE	CONCEPT_DIRECT
 40163720	prasugrel 10 MG Oral Tablet	Drug	RxNorm	855812	Clinical Drug	1	4.0	855812	medications.CODE	CONCEPT_DIRECT
-4327582	Resuscitation using intravenous fluid	Procedure	SNOMED	430701006	Procedure	1	4.0	430701006	procedures.CODE	CONCEPT_DIRECT
-1836434	sulfamethoxazole 800 MG / trimethoprim 160 MG Oral Tablet	Drug	RxNorm	198335	Clinical Drug	1	4.0	198335	medications.CODE	CONCEPT_DIRECT
+4224646	Miscarriage in second trimester	Condition	SNOMED	85116003	Disorder	1	4.0	85116003	conditions.CODE	CONCEPT_DIRECT
 40165015	meperidine hydrochloride 50 MG Oral Tablet	Drug	RxNorm	861467	Clinical Drug	1	4.0	861467	medications.CODE	CONCEPT_DIRECT
+4327582	Resuscitation using intravenous fluid	Procedure	SNOMED	430701006	Procedure	1	4.0	430701006	procedures.CODE	CONCEPT_DIRECT
 4089036	Telephone encounter	Procedure	SNOMED	185317003	Procedure	1	4.0	185317003	encounters.CODE	CONCEPT_DIRECT
+4127601	Referral to service	Observation	SNOMED	306206005	Procedure	1	4.0	306206005	procedures.CODE	CONCEPT_DIRECT
+1836434	sulfamethoxazole 800 MG / trimethoprim 160 MG Oral Tablet	Drug	RxNorm	198335	Clinical Drug	1	4.0	198335	medications.CODE	CONCEPT_DIRECT
+45768754	Generalized chronic periodontitis	Condition	SNOMED	707251008	Disorder	1	4.0	707251008	conditions.CODE	CONCEPT_DIRECT
+4147326	Sore throat	Condition	SNOMED	267102003	Clinical Finding	1	4.0	267102003	conditions.CODE	CONCEPT_DIRECT
 4079750	Osteoarthritis of knee	Condition	SNOMED	239873007	Disorder	1	4.0	239873007	conditions.CODE	CONCEPT_DIRECT
 19078924	midazolam 1 MG/ML Injectable Solution	Drug	RxNorm	311700	Clinical Drug	1	4.0	311700	medications.CODE	CONCEPT_DIRECT
 4195803	Bone density scan	Measurement	SNOMED	312681000	Procedure	1	4.0	312681000	procedures.CODE	CONCEPT_DIRECT
-4147326	Sore throat	Condition	SNOMED	267102003	Clinical Finding	1	4.0	267102003	conditions.CODE	CONCEPT_DIRECT
-42902245	{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral...	Drug	RxNorm	1359133	Branded Pack	1	4.0	1359133	medications.CODE	CONCEPT_DIRECT
-258780	Emphysematous bronchitis	Condition	SNOMED	185086009	Disorder	1	4.0	185086009	conditions.CODE	CONCEPT_DIRECT
-4254766	Digital examination of rectum	Procedure	SNOMED	410006001	Procedure	1	4.0	410006001	procedures.CODE	CONCEPT_DIRECT
-4084667	Emergency hospital admission for asthma	Observation	SNOMED	183478001	Procedure	1	4.0	183478001	encounters.CODE	CONCEPT_DIRECT
 4134304	Fracture subluxation of wrist	Condition	SNOMED	263102004	Disorder	1	4.0	263102004	conditions.CODE	CONCEPT_DIRECT
-1797515	ciprofloxacin 250 MG Oral Tablet	Drug	RxNorm	197511	Clinical Drug	1	3.0	197511	medications.CODE	CONCEPT_DIRECT
-4329847	Myocardial infarction	Condition	SNOMED	22298006	Disorder	1	3.0	22298006	conditions.CODE	CONCEPT_DIRECT
-4062207	Allergic disorder follow-up assessment	Observation	SNOMED	170838006	Procedure	1	3.0	170838006	encounters.CODE	CONCEPT_DIRECT
-4108705	Intravenous blood transfusion of packed cells	Procedure	SNOMED	180207008	Procedure	1	3.0	180207008	procedures.CODE	CONCEPT_DIRECT
-4010253	Nasal sinus endoscopy	Procedure	SNOMED	112790001	Procedure	1	3.0	112790001	procedures.CODE	CONCEPT_DIRECT
-4024612	Risk assessment	Procedure	SNOMED	225338004	Procedure	1	3.0	225338004	procedures.CODE	CONCEPT_DIRECT
-4336464	Coronary artery bypass graft	Procedure	SNOMED	232717009	Procedure	1	3.0	232717009	procedures.CODE	CONCEPT_DIRECT
-4139934	Homeless	Observation	SNOMED	32911000	Clinical Finding	1	3.0	32911000	conditions.CODE	CONCEPT_DIRECT
-46221626	levonorgestrel 0.000813 MG/HR Intrauterine System [Liletta]	Drug	RxNorm	1605257	Branded Drug	1	3.0	1605257	medications.CODE	CONCEPT_DIRECT
-437390	Hypoxemia	Condition	SNOMED	389087006	Disorder	1	3.0	389087006	conditions.CODE	CONCEPT_DIRECT
-4270024	Acute non-ST segment elevation myocardial infarction	Condition	SNOMED	401314000	Disorder	1	3.0	401314000	conditions.CODE	CONCEPT_DIRECT
-40232448	diphenhydramine hydrochloride 25 MG Oral Tablet	Drug	RxNorm	1049630	Clinical Drug	1	3.0	1049630	medications.CODE	CONCEPT_DIRECT
-35605380	remifentanil 2 MG Injection	Drug	RxNorm	1729584	Clinical Drug	1	3.0	1729584	medications.CODE	CONCEPT_DIRECT
-37397422	Asymptomatic periapical periodontitis	Condition	SNOMED	718052004	Disorder	1	3.0	718052004	conditions.CODE	CONCEPT_DIRECT
-46275427	piperacillin 2000 MG / tazobactam 250 MG Injection	Drug	RxNorm	1659131	Clinical Drug	1	3.0	1659131	medications.CODE	CONCEPT_DIRECT
-255848	Pneumonia	Condition	SNOMED	233604007	Disorder	1	3.0	233604007	conditions.CODE	CONCEPT_DIRECT
-132797	Sepsis	Condition	SNOMED	91302008	Disorder	1	3.0	91302008	conditions.CODE	CONCEPT_DIRECT
-4214376	Hyperglycemia	Condition	SNOMED	80394007	Disorder	1	3.0	80394007	conditions.CODE	CONCEPT_DIRECT
-4130829	Platelet transfusion	Procedure	SNOMED	12719002	Procedure	1	3.0	12719002	procedures.CODE	CONCEPT_DIRECT
+258780	Emphysematous bronchitis	Condition	SNOMED	185086009	Disorder	1	4.0	185086009	conditions.CODE	CONCEPT_DIRECT
+4084667	Emergency hospital admission for asthma	Observation	SNOMED	183478001	Procedure	1	4.0	183478001	encounters.CODE	CONCEPT_DIRECT
+42902245	{5 (ethinyl estradiol 0.02 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ethinyl estradiol 0.03 MG / norethindrone acetate 1 MG Oral Tablet) / 9 (ethinyl estradiol 0.035 MG / norethindrone acetate 1 MG Oral Tablet) / 7 (ferrous fumarate 75 MG Oral...	Drug	RxNorm	1359133	Branded Pack	1	4.0	1359133	medications.CODE	CONCEPT_DIRECT
+4254766	Digital examination of rectum	Procedure	SNOMED	410006001	Procedure	1	4.0	410006001	procedures.CODE	CONCEPT_DIRECT
+4056621	Recurrent urinary tract infection	Condition	SNOMED	197927001	Disorder	1	4.0	197927001	conditions.CODE	CONCEPT_DIRECT
+4062206	Allergic disorder initial assessment	Observation	SNOMED	170837001	Procedure	1	4.0	170837001	encounters.CODE	CONCEPT_DIRECT
+199076	Tubal pregnancy	Condition	SNOMED	79586000	Disorder	1	4.0	79586000	conditions.CODE	CONCEPT_DIRECT
+40486164	Transfer to stepdown unit	Observation	SNOMED	449214001	Procedure	1	4.0	449214001	procedures.CODE	CONCEPT_DIRECT
 4055754	Impacted molars	Condition	SNOMED	196416002	Disorder	1	3.0	196416002	conditions.CODE	CONCEPT_DIRECT
+4158346	Respiratory distress	Condition	SNOMED	271825005	Clinical Finding	1	3.0	271825005	conditions.CODE	CONCEPT_DIRECT
 4220544	Induced cardioplegia	Procedure	SNOMED	8290005	Procedure	1	3.0	8290005	procedures.CODE	CONCEPT_DIRECT
 4123726	Impacted tooth	Condition	SNOMED	235104008	Disorder	1	3.0	235104008	conditions.CODE	CONCEPT_DIRECT
 4079749	Osteoarthritis of hip	Condition	SNOMED	239872002	Disorder	1	3.0	239872002	conditions.CODE	CONCEPT_DIRECT
-375671	Concussion with loss of consciousness	Condition	SNOMED	62564004	Disorder	1	3.0	62564004	conditions.CODE	CONCEPT_DIRECT
+4130829	Platelet transfusion	Procedure	SNOMED	12719002	Procedure	1	3.0	12719002	procedures.CODE	CONCEPT_DIRECT
 46234522	doxycycline hyclate 100 MG	Drug	RxNorm	1649987	Clinical Drug Comp	1	3.0	1649987	medications.CODE	CONCEPT_DIRECT
 4132152	Complete blood count	Measurement	SNOMED	26604007	Procedure	1	3.0	26604007	procedures.CODE	CONCEPT_DIRECT
 40221352	150 ML vancomycin 5 MG/ML Injection	Drug	RxNorm	1807510	Quant Clinical Drug	1	3.0	1807510	medications.CODE	CONCEPT_DIRECT
-4158346	Respiratory distress	Condition	SNOMED	271825005	Clinical Finding	1	3.0	271825005	conditions.CODE	CONCEPT_DIRECT
-4034850	Laboratory test	Measurement	SNOMED	15220000	Procedure	1	3.0	15220000	procedures.CODE	CONCEPT_DIRECT
+375671	Concussion with loss of consciousness	Condition	SNOMED	62564004	Disorder	1	3.0	62564004	conditions.CODE	CONCEPT_DIRECT
+4214376	Hyperglycemia	Condition	SNOMED	80394007	Disorder	1	3.0	80394007	conditions.CODE	CONCEPT_DIRECT
 4034691	Hospital admission for isolation	Observation	SNOMED	1505002	Procedure	1	3.0	1505002	encounters.CODE	CONCEPT_DIRECT
 4051466	Childhood asthma	Condition	SNOMED	233678006	Disorder	1	3.0	233678006	conditions.CODE	CONCEPT_DIRECT
-1713694	amoxicillin 500 MG / clavulanate 125 MG Oral Tablet	Drug	RxNorm	617296	Clinical Drug	1	3.0	617296	medications.CODE	CONCEPT_DIRECT
 4272324	Cardiopulmonary bypass operation	Procedure	SNOMED	63697000	Procedure	1	3.0	63697000	procedures.CODE	CONCEPT_DIRECT
-4322471	Transplant of kidney	Procedure	SNOMED	70536003	Procedure	1	3.0	70536003	procedures.CODE	CONCEPT_DIRECT
-1718701	Abuse-Deterrent 12 HR oxycodone hydrochloride 15 MG Extended Release Oral Tablet	Drug	RxNorm	1860154	Clinical Drug	1	3.0	1860154	medications.CODE	CONCEPT_DIRECT
-46272470	Assessment of cardiac status using monitoring device	Procedure	SNOMED	710839006	Procedure	1	3.0	710839006	procedures.CODE	CONCEPT_DIRECT
 4200035	Placement of aortic cross clamp	Procedure	SNOMED	301882004	Procedure	1	3.0	301882004	procedures.CODE	CONCEPT_DIRECT
-4335825	Transthoracic echocardiography	Procedure	SNOMED	433236007	Procedure	1	3.0	433236007	procedures.CODE	CONCEPT_DIRECT
-45757232	Dental caries on pit and fissure surface penetrating into dentin	Condition	SNOMED	1085961000119100	Disorder	1	3.0	1085961000119100	conditions.CODE	CONCEPT_DIRECT
-4177543	Pretransplant evaluation of kidney recipient	Procedure	SNOMED	428830000	Procedure	1	3.0	428830000	procedures.CODE	CONCEPT_DIRECT
-4199411	Removal of aortic cross clamp	Procedure	SNOMED	301884003	Procedure	1	3.0	301884003	procedures.CODE	CONCEPT_DIRECT
-4177205	Cannulation	Procedure	SNOMED	42825003	Procedure	1	3.0	42825003	procedures.CODE	CONCEPT_DIRECT
-44784417	Referral to sleep apnea clinic	Observation	SNOMED	698560000	Procedure	1	3.0	698560000	procedures.CODE	CONCEPT_DIRECT
-4012837	Diagnostic assessment	Procedure	SNOMED	165197003	Procedure	1	3.0	165197003	procedures.CODE	CONCEPT_DIRECT
-4050428	Vascular cannula removal	Procedure	SNOMED	233553003	Procedure	1	3.0	233553003	procedures.CODE	CONCEPT_DIRECT
-4128745	Admission to surgical transplant department	Observation	SNOMED	305432006	Procedure	1	3.0	305432006	encounters.CODE	CONCEPT_DIRECT
+4034850	Laboratory test	Measurement	SNOMED	15220000	Procedure	1	3.0	15220000	procedures.CODE	CONCEPT_DIRECT
+1718701	Abuse-Deterrent 12 HR oxycodone hydrochloride 15 MG Extended Release Oral Tablet	Drug	RxNorm	1860154	Clinical Drug	1	3.0	1860154	medications.CODE	CONCEPT_DIRECT
+4322471	Transplant of kidney	Procedure	SNOMED	70536003	Procedure	1	3.0	70536003	procedures.CODE	CONCEPT_DIRECT
+46272470	Assessment of cardiac status using monitoring device	Procedure	SNOMED	710839006	Procedure	1	3.0	710839006	procedures.CODE	CONCEPT_DIRECT
+1713694	amoxicillin 500 MG / clavulanate 125 MG Oral Tablet	Drug	RxNorm	617296	Clinical Drug	1	3.0	617296	medications.CODE	CONCEPT_DIRECT
 19125062	loratadine 5 MG Chewable Tablet	Drug	RxNorm	665078	Clinical Drug	1	3.0	665078	medications.CODE	CONCEPT_DIRECT
+4050428	Vascular cannula removal	Procedure	SNOMED	233553003	Procedure	1	3.0	233553003	procedures.CODE	CONCEPT_DIRECT
+45757232	Dental caries on pit and fissure surface penetrating into dentin	Condition	SNOMED	1085961000119100	Disorder	1	3.0	1085961000119100	conditions.CODE	CONCEPT_DIRECT
+44784417	Referral to sleep apnea clinic	Observation	SNOMED	698560000	Procedure	1	3.0	698560000	procedures.CODE	CONCEPT_DIRECT
+4128745	Admission to surgical transplant department	Observation	SNOMED	305432006	Procedure	1	3.0	305432006	encounters.CODE	CONCEPT_DIRECT
+4177205	Cannulation	Procedure	SNOMED	42825003	Procedure	1	3.0	42825003	procedures.CODE	CONCEPT_DIRECT
+4177543	Pretransplant evaluation of kidney recipient	Procedure	SNOMED	428830000	Procedure	1	3.0	428830000	procedures.CODE	CONCEPT_DIRECT
+4012837	Diagnostic assessment	Procedure	SNOMED	165197003	Procedure	1	3.0	165197003	procedures.CODE	CONCEPT_DIRECT
+4335825	Transthoracic echocardiography	Procedure	SNOMED	433236007	Procedure	1	3.0	433236007	procedures.CODE	CONCEPT_DIRECT
 193782	End-stage renal disease	Condition	SNOMED	46177005	Disorder	1	3.0	46177005	conditions.CODE	CONCEPT_DIRECT
-1718758	1 ML docetaxel 20 MG/ML Injection	Drug	RxNorm	1860480	Quant Clinical Drug	1	2.0	1860480	medications.CODE	CONCEPT_DIRECT
-4143203	Fetus with chromosomal abnormality	Condition	SNOMED	267253006	Disorder	1	2.0	267253006	conditions.CODE	CONCEPT_DIRECT
-40493226	Excision of fallopian tube and surgical removal of ectopic pregnancy	Procedure	SNOMED	445912000	Procedure	1	2.0	445912000	procedures.CODE	CONCEPT_DIRECT
-723042	diazepam 5 MG Oral Tablet	Drug	RxNorm	197591	Clinical Drug	1	2.0	197591	medications.CODE	CONCEPT_DIRECT
-40166828	24 HR metoprolol succinate 25 MG Extended Release Oral Tablet	Drug	RxNorm	866427	Quant Clinical Drug	1	2.0	866427	medications.CODE	CONCEPT_DIRECT
-35604845	2 ML morphine sulfate 1 MG/ML Injection	Drug	RxNorm	1728805	Quant Clinical Drug	1	2.0	1728805	medications.CODE	CONCEPT_DIRECT
-4309027	Idiopathic atrophic hypothyroidism	Condition	SNOMED	83664006	Disorder	1	2.0	83664006	conditions.CODE	CONCEPT_DIRECT
-4112853	Malignant tumor of breast	Condition	SNOMED	254837009	Disorder	1	2.0	254837009	conditions.CODE	CONCEPT_DIRECT
-43530656	Nonproliferative retinopathy due to type 2 diabetes mellitus	Condition	SNOMED	1551000119108	Disorder	1	2.0	1551000119108	conditions.CODE	CONCEPT_DIRECT
-198199	Pyelonephritis	Condition	SNOMED	45816000	Disorder	1	2.0	45816000	conditions.CODE	CONCEPT_DIRECT
-4035415	Tear of meniscus of knee	Condition	SNOMED	239720000	Disorder	1	2.0	239720000	conditions.CODE	CONCEPT_DIRECT
-4226121	Retinopathy due to type 2 diabetes mellitus	Condition	SNOMED	422034002	Disorder	1	2.0	422034002	conditions.CODE	CONCEPT_DIRECT
-4296205	Partial thickness burn	Condition	SNOMED	403191005	Disorder	1	2.0	403191005	conditions.CODE	CONCEPT_DIRECT
-4294513	Biopsy of colon	Procedure	SNOMED	76164006	Procedure	1	2.0	76164006	procedures.CODE	CONCEPT_DIRECT
-4305852	Off-pump coronary artery bypass	Procedure	SNOMED	418824004	Procedure	1	2.0	418824004	procedures.CODE	CONCEPT_DIRECT
-4084167	Acute allergic reaction	Condition	SNOMED	241929008	Disorder	1	2.0	241929008	conditions.CODE	CONCEPT_DIRECT
-40228230	cetirizine hydrochloride 5 MG Oral Tablet	Drug	RxNorm	1014676	Clinical Drug	1	2.0	1014676	medications.CODE	CONCEPT_DIRECT
-4152936	Laceration of thigh	Condition	SNOMED	283385000	Disorder	1	2.0	283385000	conditions.CODE	CONCEPT_DIRECT
-40241188	ticagrelor 90 MG Oral Tablet	Drug	RxNorm	1116635	Clinical Drug	1	2.0	1116635	medications.CODE	CONCEPT_DIRECT
-4278672	Fracture of forearm	Condition	SNOMED	65966004	Disorder	1	2.0	65966004	conditions.CODE	CONCEPT_DIRECT
-43012754	levonorgestrel 0.00354 MG/HR Drug Implant	Drug	RxNorm	1366343	Clinical Drug	1	2.0	1366343	medications.CODE	CONCEPT_DIRECT
+4199411	Removal of aortic cross clamp	Procedure	SNOMED	301884003	Procedure	1	3.0	301884003	procedures.CODE	CONCEPT_DIRECT
+437390	Hypoxemia	Condition	SNOMED	389087006	Disorder	1	3.0	389087006	conditions.CODE	CONCEPT_DIRECT
+4010253	Nasal sinus endoscopy	Procedure	SNOMED	112790001	Procedure	1	3.0	112790001	procedures.CODE	CONCEPT_DIRECT
+4329847	Myocardial infarction	Condition	SNOMED	22298006	Disorder	1	3.0	22298006	conditions.CODE	CONCEPT_DIRECT
+4139934	Homeless	Observation	SNOMED	32911000	Clinical Finding	1	3.0	32911000	conditions.CODE	CONCEPT_DIRECT
+46221626	levonorgestrel 0.000813 MG/HR Intrauterine System [Liletta]	Drug	RxNorm	1605257	Branded Drug	1	3.0	1605257	medications.CODE	CONCEPT_DIRECT
+46275427	piperacillin 2000 MG / tazobactam 250 MG Injection	Drug	RxNorm	1659131	Clinical Drug	1	3.0	1659131	medications.CODE	CONCEPT_DIRECT
+255848	Pneumonia	Condition	SNOMED	233604007	Disorder	1	3.0	233604007	conditions.CODE	CONCEPT_DIRECT
+35605380	remifentanil 2 MG Injection	Drug	RxNorm	1729584	Clinical Drug	1	3.0	1729584	medications.CODE	CONCEPT_DIRECT
+4270024	Acute non-ST segment elevation myocardial infarction	Condition	SNOMED	401314000	Disorder	1	3.0	401314000	conditions.CODE	CONCEPT_DIRECT
+40232448	diphenhydramine hydrochloride 25 MG Oral Tablet	Drug	RxNorm	1049630	Clinical Drug	1	3.0	1049630	medications.CODE	CONCEPT_DIRECT
+1797515	ciprofloxacin 250 MG Oral Tablet	Drug	RxNorm	197511	Clinical Drug	1	3.0	197511	medications.CODE	CONCEPT_DIRECT
+4062207	Allergic disorder follow-up assessment	Observation	SNOMED	170838006	Procedure	1	3.0	170838006	encounters.CODE	CONCEPT_DIRECT
+4108705	Intravenous blood transfusion of packed cells	Procedure	SNOMED	180207008	Procedure	1	3.0	180207008	procedures.CODE	CONCEPT_DIRECT
+132797	Sepsis	Condition	SNOMED	91302008	Disorder	1	3.0	91302008	conditions.CODE	CONCEPT_DIRECT
+4024612	Risk assessment	Procedure	SNOMED	225338004	Procedure	1	3.0	225338004	procedures.CODE	CONCEPT_DIRECT
+4336464	Coronary artery bypass graft	Procedure	SNOMED	232717009	Procedure	1	3.0	232717009	procedures.CODE	CONCEPT_DIRECT
+37397422	Asymptomatic periapical periodontitis	Condition	SNOMED	718052004	Disorder	1	3.0	718052004	conditions.CODE	CONCEPT_DIRECT
 435524	Sleep disorder	Condition	SNOMED	39898005	Disorder	1	2.0	39898005	conditions.CODE	CONCEPT_DIRECT
 4080110	Continuous subcutaneous infusion of insulin	Procedure	SNOMED	180178009	Procedure	1	2.0	180178009	procedures.CODE	CONCEPT_DIRECT
+40228230	cetirizine hydrochloride 5 MG Oral Tablet	Drug	RxNorm	1014676	Clinical Drug	1	2.0	1014676	medications.CODE	CONCEPT_DIRECT
+4305852	Off-pump coronary artery bypass	Procedure	SNOMED	418824004	Procedure	1	2.0	418824004	procedures.CODE	CONCEPT_DIRECT
+4294513	Biopsy of colon	Procedure	SNOMED	76164006	Procedure	1	2.0	76164006	procedures.CODE	CONCEPT_DIRECT
+4278672	Fracture of forearm	Condition	SNOMED	65966004	Disorder	1	2.0	65966004	conditions.CODE	CONCEPT_DIRECT
 4138948	Admission to thoracic surgery department	Observation	SNOMED	305411003	Procedure	1	2.0	305411003	encounters.CODE	CONCEPT_DIRECT
+4084167	Acute allergic reaction	Condition	SNOMED	241929008	Disorder	1	2.0	241929008	conditions.CODE	CONCEPT_DIRECT
 19019336	nitroglycerin 0.4 MG Sublingual Tablet	Drug	RxNorm	198039	Clinical Drug	1	2.0	198039	medications.CODE	CONCEPT_DIRECT
-4029498	Seizure disorder	Condition	SNOMED	128613002	Disorder	1	2.0	128613002	conditions.CODE	CONCEPT_DIRECT
-19023398	sevoflurane 1000 MG/ML Inhalation Solution	Drug	RxNorm	200243	Clinical Drug	1	2.0	200243	medications.CODE	CONCEPT_DIRECT
-43011816	heparin sodium, porcine 100 UNT/ML Injectable Solution	Drug	RxNorm	1361048	Clinical Drug	1	2.0	1361048	medications.CODE	CONCEPT_DIRECT
-45772093	Fractured dental restorative material	Observation	SNOMED	1086881000119107	Clinical Finding	1	2.0	1086881000119107	conditions.CODE	CONCEPT_DIRECT
-378253	Headache	Condition	SNOMED	25064002	Clinical Finding	1	2.0	25064002	conditions.CODE	CONCEPT_DIRECT
-1718412	levonorgestrel 0.000729 MG/HR Intrauterine System [Kyleena]	Drug	RxNorm	1856546	Branded Drug	1	2.0	1856546	medications.CODE	CONCEPT_DIRECT
-782047	isoflurane 999 MG/ML Inhalation Solution	Drug	RxNorm	542347	Clinical Drug	1	2.0	542347	medications.CODE	CONCEPT_DIRECT
-4127235	Methotrexate injection into tubal pregnancy	Procedure	SNOMED	236931002	Procedure	1	2.0	236931002	procedures.CODE	CONCEPT_DIRECT
-37016354	Neuropathy due to type 2 diabetes mellitus	Condition	SNOMED	368581000119106	Disorder	1	2.0	368581000119106	conditions.CODE	CONCEPT_DIRECT
-1551192	prednisone 5 MG Oral Tablet	Drug	RxNorm	312617	Clinical Drug	1	2.0	312617	medications.CODE	CONCEPT_DIRECT
-75036	Localized, primary osteoarthritis of the hand	Condition	SNOMED	201834006	Disorder	1	2.0	201834006	conditions.CODE	CONCEPT_DIRECT
+4152936	Laceration of thigh	Condition	SNOMED	283385000	Disorder	1	2.0	283385000	conditions.CODE	CONCEPT_DIRECT
+43012754	levonorgestrel 0.00354 MG/HR Drug Implant	Drug	RxNorm	1366343	Clinical Drug	1	2.0	1366343	medications.CODE	CONCEPT_DIRECT
+40241188	ticagrelor 90 MG Oral Tablet	Drug	RxNorm	1116635	Clinical Drug	1	2.0	1116635	medications.CODE	CONCEPT_DIRECT
 1545996	atorvastatin 40 MG Oral Tablet	Drug	RxNorm	617311	Clinical Drug	1	2.0	617311	medications.CODE	CONCEPT_DIRECT
+19023398	sevoflurane 1000 MG/ML Inhalation Solution	Drug	RxNorm	200243	Clinical Drug	1	2.0	200243	medications.CODE	CONCEPT_DIRECT
+8522	Other Race	Race	Race	9	Race	1	2.0	other	patients.RACE	PLAIN_TEXT_MAP
+45772093	Fractured dental restorative material	Observation	SNOMED	1086881000119107	Clinical Finding	1	2.0	1086881000119107	conditions.CODE	CONCEPT_DIRECT
+4029498	Seizure disorder	Condition	SNOMED	128613002	Disorder	1	2.0	128613002	conditions.CODE	CONCEPT_DIRECT
+75036	Localized, primary osteoarthritis of the hand	Condition	SNOMED	201834006	Disorder	1	2.0	201834006	conditions.CODE	CONCEPT_DIRECT
 4309006	Kidney transplant failure and rejection	Condition	SNOMED	213150003	Disorder	1	2.0	213150003	conditions.CODE	CONCEPT_DIRECT
 4048171	Perennial allergic rhinitis with seasonal variation	Condition	SNOMED	232353008	Disorder	1	2.0	232353008	conditions.CODE	CONCEPT_DIRECT
-4138933	Admission to intensive care unit	Observation	SNOMED	305351004	Procedure	1	2.0	305351004	encounters.CODE | procedures.CODE	CONCEPT_DIRECT
+782047	isoflurane 999 MG/ML Inhalation Solution	Drug	RxNorm	542347	Clinical Drug	1	2.0	542347	medications.CODE	CONCEPT_DIRECT
 4096715	Vomiting symptom	Condition	SNOMED	249497008	Clinical Finding	1	2.0	249497008	conditions.CODE	CONCEPT_DIRECT
-36674642	Sepsis caused by virus	Condition	SNOMED	770349000	Disorder	1	2.0	770349000	conditions.CODE	CONCEPT_DIRECT
-137016	Retained dental root	Condition	SNOMED	66569006	Disorder	1	2.0	66569006	conditions.CODE	CONCEPT_DIRECT
 4022171	Transfusion of fresh frozen plasma	Procedure	SNOMED	116861002	Procedure	1	2.0	116861002	procedures.CODE	CONCEPT_DIRECT
-314754	Wheezing	Condition	SNOMED	56018004	Clinical Finding	1	2.0	56018004	conditions.CODE	CONCEPT_DIRECT
-197500	Primary malignant neoplasm of colon	Condition	SNOMED	93761005	Disorder	1	2.0	93761005	conditions.CODE	CONCEPT_DIRECT
-40486433	Perennial allergic rhinitis	Condition	SNOMED	446096008	Disorder	1	2.0	446096008	conditions.CODE	CONCEPT_DIRECT
-1343916	epinephrine	Drug	RxNorm	3992	Ingredient	1	2.0	313191000	procedures.CODE	MAPS_TO
-19074679	carbamazepine 20 MG/ML Oral Suspension [Tegretol]	Drug	RxNorm	308971	Branded Drug	1	2.0	308971	medications.CODE	CONCEPT_DIRECT
-31967	Nausea	Condition	SNOMED	422587007	Clinical Finding	1	2.0	422587007	conditions.CODE	CONCEPT_DIRECT
-19078555	insulin, regular, human 100 UNT/ML Injectable Solution	Drug	RxNorm	311034	Clinical Drug	1	2.0	311034	medications.CODE	CONCEPT_DIRECT
-4142905	Fracture of rib	Condition	SNOMED	33737001	Disorder	1	2.0	33737001	conditions.CODE	CONCEPT_DIRECT
-312437	Dyspnea	Condition	SNOMED	267036007	Clinical Finding	1	2.0	267036007	conditions.CODE	CONCEPT_DIRECT
-19059056	aspirin 81 MG Oral Tablet	Drug	RxNorm	243670	Clinical Drug	1	2.0	243670	medications.CODE	CONCEPT_DIRECT
+43011816	heparin sodium, porcine 100 UNT/ML Injectable Solution	Drug	RxNorm	1361048	Clinical Drug	1	2.0	1361048	medications.CODE	CONCEPT_DIRECT
+4127235	Methotrexate injection into tubal pregnancy	Procedure	SNOMED	236931002	Procedure	1	2.0	236931002	procedures.CODE	CONCEPT_DIRECT
+378253	Headache	Condition	SNOMED	25064002	Clinical Finding	1	2.0	25064002	conditions.CODE	CONCEPT_DIRECT
+36674642	Sepsis caused by virus	Condition	SNOMED	770349000	Disorder	1	2.0	770349000	conditions.CODE	CONCEPT_DIRECT
+37016354	Neuropathy due to type 2 diabetes mellitus	Condition	SNOMED	368581000119106	Disorder	1	2.0	368581000119106	conditions.CODE	CONCEPT_DIRECT
+1718412	levonorgestrel 0.000729 MG/HR Intrauterine System [Kyleena]	Drug	RxNorm	1856546	Branded Drug	1	2.0	1856546	medications.CODE	CONCEPT_DIRECT
+137016	Retained dental root	Condition	SNOMED	66569006	Disorder	1	2.0	66569006	conditions.CODE	CONCEPT_DIRECT
+1551192	prednisone 5 MG Oral Tablet	Drug	RxNorm	312617	Clinical Drug	1	2.0	312617	medications.CODE	CONCEPT_DIRECT
+4138933	Admission to intensive care unit	Observation	SNOMED	305351004	Procedure	1	2.0	305351004	procedures.CODE | encounters.CODE	CONCEPT_DIRECT
 1351705	0.25 ML leuprolide acetate 30 MG/ML Prefilled Syringe	Drug	RxNorm	752899	Quant Clinical Drug	1	2.0	752899	medications.CODE	CONCEPT_DIRECT
-19028343	clonazepam 0.25 MG Oral Tablet	Drug	RxNorm	204892	Clinical Drug	1	2.0	204892	medications.CODE	CONCEPT_DIRECT
+19074679	carbamazepine 20 MG/ML Oral Suspension [Tegretol]	Drug	RxNorm	308971	Branded Drug	1	2.0	308971	medications.CODE	CONCEPT_DIRECT
 3661905	Comprehensive metabolic panel	Measurement	SNOMED	371361000119107	Procedure	1	2.0	371361000119107	procedures.CODE	CONCEPT_DIRECT
 45768755	Localized chronic periodontitis	Condition	SNOMED	707252001	Disorder	1	2.0	707252001	conditions.CODE	CONCEPT_DIRECT
+4142905	Fracture of rib	Condition	SNOMED	33737001	Disorder	1	2.0	33737001	conditions.CODE	CONCEPT_DIRECT
+40486433	Perennial allergic rhinitis	Condition	SNOMED	446096008	Disorder	1	2.0	446096008	conditions.CODE	CONCEPT_DIRECT
+19059056	aspirin 81 MG Oral Tablet	Drug	RxNorm	243670	Clinical Drug	1	2.0	243670	medications.CODE	CONCEPT_DIRECT
+312437	Dyspnea	Condition	SNOMED	267036007	Clinical Finding	1	2.0	267036007	conditions.CODE	CONCEPT_DIRECT
 40174880	levothyroxine sodium 0.075 MG Oral Tablet	Drug	RxNorm	966222	Clinical Drug	1	2.0	966222	medications.CODE	CONCEPT_DIRECT
-4197714	Suspected prostate cancer	Observation	SNOMED	315268008	Context-dependent	1	1.0	315268008	conditions.CODE	CONCEPT_DIRECT
-319049	Acute respiratory failure	Condition	SNOMED	65710008	Disorder	1	1.0	65710008	conditions.CODE	CONCEPT_DIRECT
-19008572	hydrocortisone 10 MG/ML Topical Cream	Drug	RxNorm	106258	Clinical Drug	1	1.0	106258	medications.CODE	CONCEPT_DIRECT
-380378	Epilepsy	Condition	SNOMED	84757009	Disorder	1	1.0	84757009	conditions.CODE	CONCEPT_DIRECT
-201388	Congenital uterine anomaly	Condition	SNOMED	37849005	Disorder	1	1.0	37849005	conditions.CODE	CONCEPT_DIRECT
-4292705	Posttreatment stabilization, orthodontic device	Procedure	SNOMED	37542007	Procedure	1	1.0	37542007	procedures.CODE	CONCEPT_DIRECT
-4146173	Injury of tendon of the rotator cuff of shoulder	Condition	SNOMED	307731004	Disorder	1	1.0	307731004	conditions.CODE	CONCEPT_DIRECT
-46272665	Coordination of care plan	Procedure	SNOMED	711069006	Procedure	1	1.0	711069006	procedures.CODE	CONCEPT_DIRECT
-45768439	Acute pulmonary embolism	Condition	SNOMED	706870000	Disorder	1	1.0	706870000	conditions.CODE	CONCEPT_DIRECT
-4330583	Vasectomy	Procedure	SNOMED	22523008	Procedure	1	1.0	22523008	procedures.CODE	CONCEPT_DIRECT
-4075082	Discussion about treatment	Procedure	SNOMED	223484005	Procedure	1	1.0	223484005	encounters.CODE	CONCEPT_DIRECT
-4341247	Protracted diarrhea	Condition	SNOMED	236077008	Clinical Finding	1	1.0	236077008	conditions.CODE	CONCEPT_DIRECT
-4295146	Hospital admission, for observation	Observation	SNOMED	76464004	Procedure	1	1.0	76464004	encounters.CODE	CONCEPT_DIRECT
-4045893	Oral examination	Procedure	SNOMED	122856003	Procedure	1	1.0	122856003	procedures.CODE	CONCEPT_DIRECT
-4218106	Alcoholism	Condition	SNOMED	7200002	Disorder	1	1.0	7200002	conditions.CODE	CONCEPT_DIRECT
-4200764	Human epidermal growth factor receptor 2 gene detection by fluorescence in situ hybridization	Measurement	SNOMED	434363004	Procedure	1	1.0	434363004	procedures.CODE	CONCEPT_DIRECT
-1304048	5 ML fulvestrant 50 MG/ML Prefilled Syringe	Drug	RxNorm	727762	Quant Clinical Drug	1	1.0	727762	medications.CODE	CONCEPT_DIRECT
-4278515	Biopsy of prostate	Procedure	SNOMED	65575008	Procedure	1	1.0	65575008	procedures.CODE	CONCEPT_DIRECT
-42535066	Ultrasonography of bilateral breasts	Procedure	SNOMED	1571000087109	Procedure	1	1.0	1571000087109	procedures.CODE	CONCEPT_DIRECT
-4047494	Biopsy of breast	Procedure	SNOMED	122548005	Procedure	1	1.0	122548005	procedures.CODE	CONCEPT_DIRECT
-19074934	cefpodoxime 200 MG Oral Tablet	Drug	RxNorm	309078	Clinical Drug	1	1.0	309078	medications.CODE	CONCEPT_DIRECT
-200970	Carcinoma in situ of prostate	Condition	SNOMED	92691004	Disorder	1	1.0	92691004	conditions.CODE	CONCEPT_DIRECT
+1343916	epinephrine	Drug	RxNorm	3992	Ingredient	1	2.0	313191000	procedures.CODE	MAPS_TO
+314754	Wheezing	Condition	SNOMED	56018004	Clinical Finding	1	2.0	56018004	conditions.CODE	CONCEPT_DIRECT
+31967	Nausea	Condition	SNOMED	422587007	Clinical Finding	1	2.0	422587007	conditions.CODE	CONCEPT_DIRECT
+19028343	clonazepam 0.25 MG Oral Tablet	Drug	RxNorm	204892	Clinical Drug	1	2.0	204892	medications.CODE	CONCEPT_DIRECT
+197500	Primary malignant neoplasm of colon	Condition	SNOMED	93761005	Disorder	1	2.0	93761005	conditions.CODE	CONCEPT_DIRECT
+19078555	insulin, regular, human 100 UNT/ML Injectable Solution	Drug	RxNorm	311034	Clinical Drug	1	2.0	311034	medications.CODE	CONCEPT_DIRECT
+198199	Pyelonephritis	Condition	SNOMED	45816000	Disorder	1	2.0	45816000	conditions.CODE	CONCEPT_DIRECT
+4226121	Retinopathy due to type 2 diabetes mellitus	Condition	SNOMED	422034002	Disorder	1	2.0	422034002	conditions.CODE	CONCEPT_DIRECT
+4143203	Fetus with chromosomal abnormality	Condition	SNOMED	267253006	Disorder	1	2.0	267253006	conditions.CODE	CONCEPT_DIRECT
+4112853	Malignant tumor of breast	Condition	SNOMED	254837009	Disorder	1	2.0	254837009	conditions.CODE	CONCEPT_DIRECT
+43530656	Nonproliferative retinopathy due to type 2 diabetes mellitus	Condition	SNOMED	1551000119108	Disorder	1	2.0	1551000119108	conditions.CODE	CONCEPT_DIRECT
+40166828	24 HR metoprolol succinate 25 MG Extended Release Oral Tablet	Drug	RxNorm	866427	Quant Clinical Drug	1	2.0	866427	medications.CODE	CONCEPT_DIRECT
+723042	diazepam 5 MG Oral Tablet	Drug	RxNorm	197591	Clinical Drug	1	2.0	197591	medications.CODE	CONCEPT_DIRECT
+1718758	1 ML docetaxel 20 MG/ML Injection	Drug	RxNorm	1860480	Quant Clinical Drug	1	2.0	1860480	medications.CODE	CONCEPT_DIRECT
+4035415	Tear of meniscus of knee	Condition	SNOMED	239720000	Disorder	1	2.0	239720000	conditions.CODE	CONCEPT_DIRECT
+4296205	Partial thickness burn	Condition	SNOMED	403191005	Disorder	1	2.0	403191005	conditions.CODE	CONCEPT_DIRECT
+35604845	2 ML morphine sulfate 1 MG/ML Injection	Drug	RxNorm	1728805	Quant Clinical Drug	1	2.0	1728805	medications.CODE	CONCEPT_DIRECT
+4309027	Idiopathic atrophic hypothyroidism	Condition	SNOMED	83664006	Disorder	1	2.0	83664006	conditions.CODE	CONCEPT_DIRECT
+40493226	Excision of fallopian tube and surgical removal of ectopic pregnancy	Procedure	SNOMED	445912000	Procedure	1	2.0	445912000	procedures.CODE	CONCEPT_DIRECT
 4062501	Asthma screening	Measurement	SNOMED	171231001	Procedure	1	1.0	171231001	procedures.CODE	CONCEPT_DIRECT
 40220497	5 ML sufentanil 0.05 MG/ML Injection	Drug	RxNorm	1809104	Quant Clinical Drug	1	1.0	1809104	medications.CODE	CONCEPT_DIRECT
-4079945	Closed reduction of dislocation of temporomandibular joint	Procedure	SNOMED	179632003	Procedure	1	1.0	179632003	procedures.CODE	CONCEPT_DIRECT
-46287328	ceftriaxone 1000 MG Injection	Drug	RxNorm	1665021	Clinical Drug	1	1.0	1665021	medications.CODE	CONCEPT_DIRECT
 4089050	Follow-up visit	Observation	SNOMED	185389009	Procedure	1	1.0	185389009	encounters.CODE	CONCEPT_DIRECT
-4230399	Closed fracture of hip	Condition	SNOMED	359817006	Disorder	1	1.0	359817006	conditions.CODE	CONCEPT_DIRECT
+46287328	ceftriaxone 1000 MG Injection	Drug	RxNorm	1665021	Clinical Drug	1	1.0	1665021	medications.CODE	CONCEPT_DIRECT
+4079945	Closed reduction of dislocation of temporomandibular joint	Procedure	SNOMED	179632003	Procedure	1	1.0	179632003	procedures.CODE	CONCEPT_DIRECT
+19074934	cefpodoxime 200 MG Oral Tablet	Drug	RxNorm	309078	Clinical Drug	1	1.0	309078	medications.CODE	CONCEPT_DIRECT
+42535066	Ultrasonography of bilateral breasts	Procedure	SNOMED	1571000087109	Procedure	1	1.0	1571000087109	procedures.CODE	CONCEPT_DIRECT
+4278515	Biopsy of prostate	Procedure	SNOMED	65575008	Procedure	1	1.0	65575008	procedures.CODE	CONCEPT_DIRECT
 4180790	Malignant tumor of colon	Condition	SNOMED	363406005	Disorder	1	1.0	363406005	conditions.CODE	CONCEPT_DIRECT
+4047494	Biopsy of breast	Procedure	SNOMED	122548005	Procedure	1	1.0	122548005	procedures.CODE	CONCEPT_DIRECT
+40489429	Telemedicine consultation with patient	Observation	SNOMED	448337001	Procedure	1	1.0	448337001	procedures.CODE	CONCEPT_DIRECT
+40488354	Continuous positive airway pressure titration	Procedure	SNOMED	446573003	Procedure	1	1.0	446573003	procedures.CODE	CONCEPT_DIRECT
+4161390	Human epidermal growth factor receptor 2 gene detection by immunohistochemistry	Measurement	SNOMED	433114000	Procedure	1	1.0	433114000	procedures.CODE	CONCEPT_DIRECT
 43530950	Complication occurring during pregnancy	Condition	SNOMED	609496007	Disorder	1	1.0	609496007	conditions.CODE	CONCEPT_DIRECT
-40397007	Supplemental tooth	Condition	SNOMED	196273001	Disorder	1	1.0	196273001	conditions.CODE	CONCEPT_DIRECT
-4312230	Periodic reevaluation and management of healthy individual	Observation	SNOMED	86013001	Procedure	1	1.0	86013001	encounters.CODE	CONCEPT_DIRECT
+4323902	Lung volume reduction surgery	Procedure	SNOMED	429609002	Procedure	1	1.0	429609002	procedures.CODE	CONCEPT_DIRECT
 4216978	Traumatic dislocation of temporomandibular joint	Condition	SNOMED	81629009	Disorder	1	1.0	81629009	conditions.CODE	CONCEPT_DIRECT
 381316	Cerebrovascular accident	Condition	SNOMED	230690007	Disorder	1	1.0	230690007	conditions.CODE	CONCEPT_DIRECT
-40488354	Continuous positive airway pressure titration	Procedure	SNOMED	446573003	Procedure	1	1.0	446573003	procedures.CODE	CONCEPT_DIRECT
-40489429	Telemedicine consultation with patient	Observation	SNOMED	448337001	Procedure	1	1.0	448337001	procedures.CODE	CONCEPT_DIRECT
-4323902	Lung volume reduction surgery	Procedure	SNOMED	429609002	Procedure	1	1.0	429609002	procedures.CODE	CONCEPT_DIRECT
+4230399	Closed fracture of hip	Condition	SNOMED	359817006	Disorder	1	1.0	359817006	conditions.CODE	CONCEPT_DIRECT
+4312230	Periodic reevaluation and management of healthy individual	Observation	SNOMED	86013001	Procedure	1	1.0	86013001	encounters.CODE	CONCEPT_DIRECT
+200970	Carcinoma in situ of prostate	Condition	SNOMED	92691004	Disorder	1	1.0	92691004	conditions.CODE	CONCEPT_DIRECT
 4337138	Transplant of lung	Procedure	SNOMED	88039007	Procedure	1	1.0	88039007	procedures.CODE	CONCEPT_DIRECT
-4161390	Human epidermal growth factor receptor 2 gene detection by immunohistochemistry	Measurement	SNOMED	433114000	Procedure	1	1.0	433114000	procedures.CODE	CONCEPT_DIRECT
-80502	Osteoporosis	Condition	SNOMED	64859006	Disorder	1	1.0	64859006	conditions.CODE	CONCEPT_DIRECT
-40163350	propranolol hydrochloride 60 MG Oral Tablet	Drug	RxNorm	856556	Clinical Drug	1	1.0	856556	medications.CODE	CONCEPT_DIRECT
-4085017	Referral to hypertension clinic	Observation	SNOMED	183856001	Procedure	1	1.0	183856001	procedures.CODE	CONCEPT_DIRECT
-4120613	Acquired coagulation disorder	Condition	SNOMED	234466008	Disorder	1	1.0	234466008	conditions.CODE	CONCEPT_DIRECT
-4245614	Bleeding from anus	Condition	SNOMED	6072007	Disorder	1	1.0	6072007	conditions.CODE	CONCEPT_DIRECT
-40479422	Injury of medial collateral ligament of knee	Condition	SNOMED	444448004	Disorder	1	1.0	444448004	conditions.CODE	CONCEPT_DIRECT
+40397007	Supplemental tooth	Condition	SNOMED	196273001	Disorder	1	1.0	196273001	conditions.CODE	CONCEPT_DIRECT
 4182983	Gingival enlargement	Condition	SNOMED	54711002	Disorder	1	1.0	54711002	conditions.CODE	CONCEPT_DIRECT
-19115197	amoxicillin 875 MG / clavulanate 125 MG Oral Tablet	Drug	RxNorm	562508	Clinical Drug	1	1.0	562508	medications.CODE	CONCEPT_DIRECT
-19002796	desflurane 1000 MG/ML Inhalation Solution	Drug	RxNorm	562366	Clinical Drug	1	1.0	562366	medications.CODE	CONCEPT_DIRECT
-19112599	chlorpheniramine maleate 2 MG/ML Oral Solution	Drug	RxNorm	477045	Clinical Drug	1	1.0	477045	medications.CODE	CONCEPT_DIRECT
-19077344	ferrous sulfate 325 MG Oral Tablet	Drug	RxNorm	310325	Clinical Drug	1	1.0	310325	medications.CODE	CONCEPT_DIRECT
-40228214	cetirizine hydrochloride 10 MG Oral Tablet	Drug	RxNorm	1014678	Clinical Drug	1	1.0	1014678	medications.CODE	CONCEPT_DIRECT
-19076374	diazepam 5 MG/ML Injectable Solution	Drug	RxNorm	309845	Clinical Drug	1	1.0	309845	medications.CODE	CONCEPT_DIRECT
-19132594	fosfomycin 3000 MG Granules for Oral Solution	Drug	RxNorm	808917	Clinical Drug	1	1.0	808917	medications.CODE	CONCEPT_DIRECT
-1334494	ramipril 10 MG Oral Capsule	Drug	RxNorm	261962	Clinical Drug	1	1.0	261962	medications.CODE	CONCEPT_DIRECT
-45772090	Dental caries on pit and fissure surface penetrating into pulp	Condition	SNOMED	1085971000119106	Disorder	1	1.0	1085971000119106	conditions.CODE	CONCEPT_DIRECT
-19046742	aspirin 325 MG Oral Tablet	Drug	RxNorm	212033	Clinical Drug	1	1.0	212033	medications.CODE	CONCEPT_DIRECT
-3661627	Serum metabolic panel	Measurement	SNOMED	866146005	Procedure	1	1.0	866146005	procedures.CODE	CONCEPT_DIRECT
-19019308	24 HR nicotine 0.292 MG/HR Transdermal System	Drug	RxNorm	198031	Quant Clinical Drug	1	1.0	198031	medications.CODE	CONCEPT_DIRECT
-4221106	Sleep apnea monitoring with alarm	Observation	SNOMED	82808001	Procedure	1	1.0	82808001	procedures.CODE	CONCEPT_DIRECT
-440086	Child attention deficit disorder	Condition	SNOMED	192127007	Disorder	1	1.0	192127007	conditions.CODE	CONCEPT_DIRECT
-4256640	Body mass index 40+ - severely obese	Observation	SNOMED	408512008	Clinical Finding	1	1.0	408512008	conditions.CODE	CONCEPT_DIRECT
-40220960	alteplase 100 MG Injection	Drug	RxNorm	1804799	Clinical Drug	1	1.0	1804799	medications.CODE	CONCEPT_DIRECT
-4290232	Range of motion testing	Procedure	SNOMED	69212005	Procedure	1	1.0	69212005	procedures.CODE	CONCEPT_DIRECT
 4235738	Prostatectomy	Procedure	SNOMED	90470006	Procedure	1	1.0	90470006	procedures.CODE	CONCEPT_DIRECT
-1150837	terfenadine 60 MG Oral Tablet	Drug	RxNorm	141918	Clinical Drug	1	1.0	141918	medications.CODE	CONCEPT_DIRECT
-4214810	Referral to home health care service	Observation	SNOMED	417511005	Procedure	1	1.0	417511005	procedures.CODE	CONCEPT_DIRECT
+19046742	aspirin 325 MG Oral Tablet	Drug	RxNorm	212033	Clinical Drug	1	1.0	212033	medications.CODE	CONCEPT_DIRECT
+1334494	ramipril 10 MG Oral Capsule	Drug	RxNorm	261962	Clinical Drug	1	1.0	261962	medications.CODE	CONCEPT_DIRECT
 4209011	Pulmonic valve stenosis	Condition	SNOMED	56786000	Disorder	1	1.0	56786000	conditions.CODE	CONCEPT_DIRECT
+19112599	chlorpheniramine maleate 2 MG/ML Oral Solution	Drug	RxNorm	477045	Clinical Drug	1	1.0	477045	medications.CODE	CONCEPT_DIRECT
+19076374	diazepam 5 MG/ML Injectable Solution	Drug	RxNorm	309845	Clinical Drug	1	1.0	309845	medications.CODE	CONCEPT_DIRECT
+19077344	ferrous sulfate 325 MG Oral Tablet	Drug	RxNorm	310325	Clinical Drug	1	1.0	310325	medications.CODE	CONCEPT_DIRECT
+40479422	Injury of medial collateral ligament of knee	Condition	SNOMED	444448004	Disorder	1	1.0	444448004	conditions.CODE	CONCEPT_DIRECT
+19019308	24 HR nicotine 0.292 MG/HR Transdermal System	Drug	RxNorm	198031	Quant Clinical Drug	1	1.0	198031	medications.CODE	CONCEPT_DIRECT
+80502	Osteoporosis	Condition	SNOMED	64859006	Disorder	1	1.0	64859006	conditions.CODE	CONCEPT_DIRECT
+40220960	alteplase 100 MG Injection	Drug	RxNorm	1804799	Clinical Drug	1	1.0	1804799	medications.CODE	CONCEPT_DIRECT
 438783	Erosion of teeth	Condition	SNOMED	82212003	Disorder	1	1.0	82212003	conditions.CODE	CONCEPT_DIRECT
+4085017	Referral to hypertension clinic	Observation	SNOMED	183856001	Procedure	1	1.0	183856001	procedures.CODE	CONCEPT_DIRECT
+1150837	terfenadine 60 MG Oral Tablet	Drug	RxNorm	141918	Clinical Drug	1	1.0	141918	medications.CODE	CONCEPT_DIRECT
 4202451	Fluoroscopy guided percutaneous mechanical thrombectomy of portal vein with contrast	Procedure	SNOMED	433112001	Procedure	1	1.0	433112001	procedures.CODE	CONCEPT_DIRECT
-40173590	alendronic acid 10 MG Oral Tablet	Drug	RxNorm	904419	Clinical Drug	1	1.0	904419	medications.CODE	CONCEPT_DIRECT
-134438	Contact dermatitis	Condition	SNOMED	40275004	Disorder	1	1.0	40275004	conditions.CODE	CONCEPT_DIRECT
-40185304	losartan potassium 50 MG Oral Tablet	Drug	RxNorm	979492	Clinical Drug	1	1.0	979492	medications.CODE	CONCEPT_DIRECT
-4063814	Comprehensive interview and evaluation	Procedure	SNOMED	200619008	Procedure	1	1.0	200619008	procedures.CODE	CONCEPT_DIRECT
-4072103	Discussion about options	Procedure	SNOMED	223487003	Procedure	1	1.0	223487003	procedures.CODE	CONCEPT_DIRECT
-44782746	Acute deep venous thrombosis	Condition	SNOMED	132281000119108	Disorder	1	1.0	132281000119108	conditions.CODE	CONCEPT_DIRECT
-4021182	Close observation	Observation	SNOMED	225415001	Procedure	1	1.0	225415001	procedures.CODE	CONCEPT_DIRECT
-19128065	{7 (inert ingredients 1 MG Oral Tablet) / 21 (mestranol 0.05 MG / norethindrone 1 MG Oral Tablet) } Pack [Norinyl 1+50 28 Day]	Drug	RxNorm	749882	Branded Pack	1	1.0	749882	medications.CODE	CONCEPT_DIRECT
-19075380	ciprofloxacin 500 MG Oral Tablet	Drug	RxNorm	309309	Clinical Drug	1	1.0	309309	medications.CODE	CONCEPT_DIRECT
-201111	Renal dysplasia	Condition	SNOMED	204949001	Disorder	1	1.0	204949001	conditions.CODE	CONCEPT_DIRECT
-1545997	atorvastatin 10 MG Oral Tablet	Drug	RxNorm	617312	Clinical Drug	1	1.0	617312	medications.CODE	CONCEPT_DIRECT
-4296597	Cardiovascular stress testing	Procedure	SNOMED	76746007	Procedure	1	1.0	76746007	procedures.CODE	CONCEPT_DIRECT
-793487	50 ML bivalirudin 5 MG/ML Injection	Drug	RxNorm	1997015	Quant Clinical Drug	1	1.0	1997015	medications.CODE	CONCEPT_DIRECT
-1334459	ramipril 2.5 MG Oral Capsule	Drug	RxNorm	198188	Clinical Drug	1	1.0	198188	medications.CODE	CONCEPT_DIRECT
-1150771	astemizole 10 MG Oral Tablet	Drug	RxNorm	197378	Clinical Drug	1	1.0	197378	medications.CODE	CONCEPT_DIRECT
-1592922	ribociclib 200 MG Oral Tablet	Drug	RxNorm	1873983	Clinical Drug	1	1.0	1873983	medications.CODE	CONCEPT_DIRECT
-261325	Pulmonary emphysema	Condition	SNOMED	87433001	Disorder	1	1.0	87433001	conditions.CODE	CONCEPT_DIRECT
-35606192	10 ML alfentanil 0.5 MG/ML Injection	Drug	RxNorm	1723208	Quant Clinical Drug	1	1.0	1723208	medications.CODE	CONCEPT_DIRECT
-903657	Cigarette smoker	Observation	OMOP Extension	OMOP5181838	Clinical Finding	1	1.0	449868002	conditions.CODE	MAPS_TO
-4077697	Screening mammography	Procedure	SNOMED	24623002	Procedure	1	1.0	24623002	procedures.CODE	CONCEPT_DIRECT
-4129902	Neoplasm of prostate	Condition	SNOMED	126906006	Disorder	1	1.0	126906006	conditions.CODE	CONCEPT_DIRECT
-442588	Obstructive sleep apnea syndrome	Condition	SNOMED	78275009	Disorder	1	1.0	78275009	conditions.CODE	CONCEPT_DIRECT
+4120613	Acquired coagulation disorder	Condition	SNOMED	234466008	Disorder	1	1.0	234466008	conditions.CODE	CONCEPT_DIRECT
+45772090	Dental caries on pit and fissure surface penetrating into pulp	Condition	SNOMED	1085971000119106	Disorder	1	1.0	1085971000119106	conditions.CODE	CONCEPT_DIRECT
+4290232	Range of motion testing	Procedure	SNOMED	69212005	Procedure	1	1.0	69212005	procedures.CODE	CONCEPT_DIRECT
+4214810	Referral to home health care service	Observation	SNOMED	417511005	Procedure	1	1.0	417511005	procedures.CODE	CONCEPT_DIRECT
+19002796	desflurane 1000 MG/ML Inhalation Solution	Drug	RxNorm	562366	Clinical Drug	1	1.0	562366	medications.CODE	CONCEPT_DIRECT
+440086	Child attention deficit disorder	Condition	SNOMED	192127007	Disorder	1	1.0	192127007	conditions.CODE	CONCEPT_DIRECT
+19115197	amoxicillin 875 MG / clavulanate 125 MG Oral Tablet	Drug	RxNorm	562508	Clinical Drug	1	1.0	562508	medications.CODE	CONCEPT_DIRECT
+40163350	propranolol hydrochloride 60 MG Oral Tablet	Drug	RxNorm	856556	Clinical Drug	1	1.0	856556	medications.CODE	CONCEPT_DIRECT
+4221106	Sleep apnea monitoring with alarm	Observation	SNOMED	82808001	Procedure	1	1.0	82808001	procedures.CODE	CONCEPT_DIRECT
+3661627	Serum metabolic panel	Measurement	SNOMED	866146005	Procedure	1	1.0	866146005	procedures.CODE	CONCEPT_DIRECT
+4256640	Body mass index 40+ - severely obese	Observation	SNOMED	408512008	Clinical Finding	1	1.0	408512008	conditions.CODE	CONCEPT_DIRECT
+19132594	fosfomycin 3000 MG Granules for Oral Solution	Drug	RxNorm	808917	Clinical Drug	1	1.0	808917	medications.CODE	CONCEPT_DIRECT
+40228214	cetirizine hydrochloride 10 MG Oral Tablet	Drug	RxNorm	1014678	Clinical Drug	1	1.0	1014678	medications.CODE	CONCEPT_DIRECT
+4245614	Bleeding from anus	Condition	SNOMED	6072007	Disorder	1	1.0	6072007	conditions.CODE	CONCEPT_DIRECT
 313459	Sleep apnea	Condition	SNOMED	73430006	Disorder	1	1.0	73430006	conditions.CODE	CONCEPT_DIRECT
 434490	Chill	Observation	SNOMED	43724002	Clinical Finding	1	1.0	43724002	conditions.CODE	CONCEPT_DIRECT
+903657	Cigarette smoker	Observation	OMOP Extension	OMOP5181838	Clinical Finding	1	1.0	449868002	conditions.CODE	MAPS_TO
+4072103	Discussion about options	Procedure	SNOMED	223487003	Procedure	1	1.0	223487003	procedures.CODE	CONCEPT_DIRECT
+19075380	ciprofloxacin 500 MG Oral Tablet	Drug	RxNorm	309309	Clinical Drug	1	1.0	309309	medications.CODE	CONCEPT_DIRECT
+442588	Obstructive sleep apnea syndrome	Condition	SNOMED	78275009	Disorder	1	1.0	78275009	conditions.CODE	CONCEPT_DIRECT
+4063814	Comprehensive interview and evaluation	Procedure	SNOMED	200619008	Procedure	1	1.0	200619008	procedures.CODE	CONCEPT_DIRECT
+261325	Pulmonary emphysema	Condition	SNOMED	87433001	Disorder	1	1.0	87433001	conditions.CODE	CONCEPT_DIRECT
+1150771	astemizole 10 MG Oral Tablet	Drug	RxNorm	197378	Clinical Drug	1	1.0	197378	medications.CODE	CONCEPT_DIRECT
 4181781	Partial resection of colon	Procedure	SNOMED	43075005	Procedure	1	1.0	43075005	procedures.CODE	CONCEPT_DIRECT
+44782746	Acute deep venous thrombosis	Condition	SNOMED	132281000119108	Disorder	1	1.0	132281000119108	conditions.CODE	CONCEPT_DIRECT
+134438	Contact dermatitis	Condition	SNOMED	40275004	Disorder	1	1.0	40275004	conditions.CODE	CONCEPT_DIRECT
+35606192	10 ML alfentanil 0.5 MG/ML Injection	Drug	RxNorm	1723208	Quant Clinical Drug	1	1.0	1723208	medications.CODE	CONCEPT_DIRECT
+1545997	atorvastatin 10 MG Oral Tablet	Drug	RxNorm	617312	Clinical Drug	1	1.0	617312	medications.CODE	CONCEPT_DIRECT
+793487	50 ML bivalirudin 5 MG/ML Injection	Drug	RxNorm	1997015	Quant Clinical Drug	1	1.0	1997015	medications.CODE	CONCEPT_DIRECT
 37017023	Recurrent rectal polyp	Condition	SNOMED	713197008	Disorder	1	1.0	713197008	conditions.CODE	CONCEPT_DIRECT
+1334459	ramipril 2.5 MG Oral Capsule	Drug	RxNorm	198188	Clinical Drug	1	1.0	198188	medications.CODE	CONCEPT_DIRECT
+40173590	alendronic acid 10 MG Oral Tablet	Drug	RxNorm	904419	Clinical Drug	1	1.0	904419	medications.CODE	CONCEPT_DIRECT
+19128065	{7 (inert ingredients 1 MG Oral Tablet) / 21 (mestranol 0.05 MG / norethindrone 1 MG Oral Tablet) } Pack [Norinyl 1+50 28 Day]	Drug	RxNorm	749882	Branded Pack	1	1.0	749882	medications.CODE	CONCEPT_DIRECT
+4077697	Screening mammography	Procedure	SNOMED	24623002	Procedure	1	1.0	24623002	procedures.CODE	CONCEPT_DIRECT
+4296597	Cardiovascular stress testing	Procedure	SNOMED	76746007	Procedure	1	1.0	76746007	procedures.CODE	CONCEPT_DIRECT
+201111	Renal dysplasia	Condition	SNOMED	204949001	Disorder	1	1.0	204949001	conditions.CODE	CONCEPT_DIRECT
+4129902	Neoplasm of prostate	Condition	SNOMED	126906006	Disorder	1	1.0	126906006	conditions.CODE	CONCEPT_DIRECT
+1592922	ribociclib 200 MG Oral Tablet	Drug	RxNorm	1873983	Clinical Drug	1	1.0	1873983	medications.CODE	CONCEPT_DIRECT
+40185304	losartan potassium 50 MG Oral Tablet	Drug	RxNorm	979492	Clinical Drug	1	1.0	979492	medications.CODE	CONCEPT_DIRECT
+4021182	Close observation	Observation	SNOMED	225415001	Procedure	1	1.0	225415001	procedures.CODE	CONCEPT_DIRECT
+4146173	Injury of tendon of the rotator cuff of shoulder	Condition	SNOMED	307731004	Disorder	1	1.0	307731004	conditions.CODE	CONCEPT_DIRECT
+46272665	Coordination of care plan	Procedure	SNOMED	711069006	Procedure	1	1.0	711069006	procedures.CODE	CONCEPT_DIRECT
+4341247	Protracted diarrhea	Condition	SNOMED	236077008	Clinical Finding	1	1.0	236077008	conditions.CODE	CONCEPT_DIRECT
+4295146	Hospital admission, for observation	Observation	SNOMED	76464004	Procedure	1	1.0	76464004	encounters.CODE	CONCEPT_DIRECT
+4200764	Human epidermal growth factor receptor 2 gene detection by fluorescence in situ hybridization	Measurement	SNOMED	434363004	Procedure	1	1.0	434363004	procedures.CODE	CONCEPT_DIRECT
+45768439	Acute pulmonary embolism	Condition	SNOMED	706870000	Disorder	1	1.0	706870000	conditions.CODE	CONCEPT_DIRECT
+4045893	Oral examination	Procedure	SNOMED	122856003	Procedure	1	1.0	122856003	procedures.CODE	CONCEPT_DIRECT
+4292705	Posttreatment stabilization, orthodontic device	Procedure	SNOMED	37542007	Procedure	1	1.0	37542007	procedures.CODE	CONCEPT_DIRECT
+4075082	Discussion about treatment	Procedure	SNOMED	223484005	Procedure	1	1.0	223484005	encounters.CODE	CONCEPT_DIRECT
+4197714	Suspected prostate cancer	Observation	SNOMED	315268008	Context-dependent	1	1.0	315268008	conditions.CODE	CONCEPT_DIRECT
+4330583	Vasectomy	Procedure	SNOMED	22523008	Procedure	1	1.0	22523008	procedures.CODE	CONCEPT_DIRECT
+201388	Congenital uterine anomaly	Condition	SNOMED	37849005	Disorder	1	1.0	37849005	conditions.CODE	CONCEPT_DIRECT
+1304048	5 ML fulvestrant 50 MG/ML Prefilled Syringe	Drug	RxNorm	727762	Quant Clinical Drug	1	1.0	727762	medications.CODE	CONCEPT_DIRECT
+380378	Epilepsy	Condition	SNOMED	84757009	Disorder	1	1.0	84757009	conditions.CODE	CONCEPT_DIRECT
+4218106	Alcoholism	Condition	SNOMED	7200002	Disorder	1	1.0	7200002	conditions.CODE	CONCEPT_DIRECT
+319049	Acute respiratory failure	Condition	SNOMED	65710008	Disorder	1	1.0	65710008	conditions.CODE	CONCEPT_DIRECT
+19008572	hydrocortisone 10 MG/ML Topical Cream	Drug	RxNorm	106258	Clinical Drug	1	1.0	106258	medications.CODE	CONCEPT_DIRECT

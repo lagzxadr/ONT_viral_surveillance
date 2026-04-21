@@ -1,5 +1,5 @@
 {
-  "run_timestamp": "2026-04-21T04:55:26.906495",
+  "run_timestamp": "2026-04-21T05:44:02.963840",
   "tables": {
     "person": {
       "source_rows": 109,
@@ -22,5 +22,5 @@
       "cdm_rows": 24370
     }
   },
-  "mapping_coverage_pct": 72.92
+  "mapping_coverage_pct": 73.8
 }

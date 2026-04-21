@@ -6,6 +6,7 @@ Loads raw source data and OMOP vocabulary into DuckDB, maps source codes
 to standard concepts via CONCEPT_RELATIONSHIP, and populates CDM tables.
 
 Mapping strategy (in priority order):
+  0. PLAIN_TEXT_MAP     (static lookup for plain-text values like Synthea Race/Ethnicity/Gender)
   1. SOURCE_TO_CONCEPT_MAP  (custom mappings in the vocabulary)
   2. CONCEPT table direct lookup by concept_code + vocabulary_id
   3. CONCEPT_RELATIONSHIP 'Maps to' traversal
@@ -16,6 +17,7 @@ Synthea compatibility:
   - ISO 8601 datetime strings (e.g. 1998-02-02T17:16:12Z) are truncated to dates
   - person_source_value / visit_source_value columns carry the original UUIDs
   - procedure_occurrence CDM table is supported
+  - Race/Ethnicity/Gender plain-text strings resolved via PLAIN_TEXT_CONCEPT_MAP
 """
 
 import argparse
@@ -386,6 +388,48 @@ def load_vocabulary(con: duckdb.DuckDBPyConnection, vocab_dir: Path) -> None:
         log.info("    Loaded %d rows", count)
 
 
+# ── Static plain-text → concept_id lookup (Synthea & similar sources) ────────
+# Synthea encodes Race, Ethnicity, and Gender as plain English strings rather
+# than numeric concept codes.  These never match Athena's concept_code column,
+# so we resolve them here before hitting the database.
+#
+# concept_id values are from the standard OMOP vocabulary:
+#   Gender   : 8507 M, 8532 F
+#   Race     : 8527 white, 8516 black, 8515 asian, 8657 native, 8522 other
+#   Ethnicity: 38003563 hispanic, 38003564 nonhispanic
+
+PLAIN_TEXT_CONCEPT_MAP: dict[tuple[str, str], tuple[int, str, str]] = {
+    # (source_value_lower, vocabulary_id) → (concept_id, concept_name, domain_id)
+
+    # Gender
+    ("m",           "Gender"): (8507,     "MALE",                              "Gender"),
+    ("male",        "Gender"): (8507,     "MALE",                              "Gender"),
+    ("f",           "Gender"): (8532,     "FEMALE",                            "Gender"),
+    ("female",      "Gender"): (8532,     "FEMALE",                            "Gender"),
+
+    # Race
+    ("white",                       "Race"): (8527, "White",                                    "Race"),
+    ("black",                       "Race"): (8516, "Black or African American",                "Race"),
+    ("black or african american",   "Race"): (8516, "Black or African American",                "Race"),
+    ("asian",                       "Race"): (8515, "Asian",                                    "Race"),
+    ("native",                      "Race"): (8657, "Native Hawaiian or Other Pacific Islander","Race"),
+    ("pacific islander",            "Race"): (8657, "Native Hawaiian or Other Pacific Islander","Race"),
+    ("native hawaiian",             "Race"): (8657, "Native Hawaiian or Other Pacific Islander","Race"),
+    ("hawaiian",                    "Race"): (8657, "Native Hawaiian or Other Pacific Islander","Race"),
+    ("american indian",             "Race"): (8657, "Native Hawaiian or Other Pacific Islander","Race"),
+    ("other",                       "Race"): (8522, "Other Race",                               "Race"),
+    ("hispanic",                    "Race"): (8522, "Other Race",                               "Race"),
+
+    # Ethnicity
+    ("hispanic",        "Ethnicity"): (38003563, "Hispanic or Latino",     "Ethnicity"),
+    ("nonhispanic",     "Ethnicity"): (38003564, "Not Hispanic or Latino", "Ethnicity"),
+    ("non-hispanic",    "Ethnicity"): (38003564, "Not Hispanic or Latino", "Ethnicity"),
+    ("not hispanic",    "Ethnicity"): (38003564, "Not Hispanic or Latino", "Ethnicity"),
+    ("not hispanic or latino", "Ethnicity"): (38003564, "Not Hispanic or Latino", "Ethnicity"),
+    ("hispanic or latino",     "Ethnicity"): (38003563, "Hispanic or Latino",     "Ethnicity"),
+}
+
+
 def resolve_concept(
     con: duckdb.DuckDBPyConnection,
     source_value: str,
@@ -395,6 +439,12 @@ def resolve_concept(
     Resolve a source code to a standard OMOP concept_id.
     Returns (concept_id, concept_name, domain_id, method, confidence).
     """
+    # 0. Plain-text static lookup (handles Synthea Race/Ethnicity/Gender strings)
+    key = (source_value.strip().lower(), source_vocabulary)
+    if key in PLAIN_TEXT_CONCEPT_MAP:
+        cid, cname, domain = PLAIN_TEXT_CONCEPT_MAP[key]
+        return cid, cname, domain, "PLAIN_TEXT_MAP", 1.0
+
     # 1. SOURCE_TO_CONCEPT_MAP
     row = con.execute("""
         SELECT target_concept_id, c.concept_name, c.domain_id
