@@ -1,0 +1,15 @@
+Process,Original Container URI,Registry,Tool,Version,Target ECR URI
+NANOPLOT,quay.io/biocontainers/nanoplot:1.41.6--pyhdfd78af_0,quay.io,nanoplot,1.41.6--pyhdfd78af_0,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/nanoplot:1.41.6--pyhdfd78af_0
+NANOSTAT,quay.io/biocontainers/nanostat:1.6.0--pyhdfd78af_0,quay.io,nanostat,1.6.0--pyhdfd78af_0,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/nanostat:1.6.0--pyhdfd78af_0
+PORECHOP,quay.io/biocontainers/porechop:0.2.4--py39h7cff6ad_3,quay.io,porechop,0.2.4--py39h7cff6ad_3,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/porechop:0.2.4--py39h7cff6ad_3
+FILTLONG,quay.io/biocontainers/filtlong:0.2.1--h9a82719_1,quay.io,filtlong,0.2.1--h9a82719_1,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/filtlong:0.2.1--h9a82719_1
+MINIMAP2,quay.io/biocontainers/minimap2:2.26--he4a0461_2,quay.io,minimap2,2.26--he4a0461_2,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/minimap2:2.26--he4a0461_2
+SAMTOOLS,quay.io/biocontainers/samtools:1.18--h57914f4_0,quay.io,samtools,1.18--h57914f4_0,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/samtools:1.18--h57914f4_0
+KRAKEN2,quay.io/biocontainers/kraken2:2.1.3--pl5321h9f5acd7_0,quay.io,kraken2,2.1.3--pl5321h9f5acd7_0,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/kraken2:2.1.3--pl5321h9f5acd7_0
+BRACKEN,quay.io/biocontainers/bracken:2.8--py39hc16433a_0,quay.io,bracken,2.8--py39hc16433a_0,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/bracken:2.8--py39hc16433a_0
+KRONA,quay.io/biocontainers/krona:2.8.1--pl5321hdfd78af_1,quay.io,krona,2.8.1--pl5321hdfd78af_1,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/krona:2.8.1--pl5321hdfd78af_1
+FLYE,quay.io/biocontainers/flye:2.9.3--py39h6935b12_1,quay.io,flye,2.9.3--py39h6935b12_1,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/flye:2.9.3--py39h6935b12_1
+MEDAKA,quay.io/biocontainers/medaka:1.11.3--py39h05d5c5e_0,quay.io,medaka,1.11.3--py39h05d5c5e_0,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/medaka:1.11.3--py39h05d5c5e_0
+BLAST,quay.io/biocontainers/blast:2.14.1--pl5321h6f7f691_0,quay.io,blast,2.14.1--pl5321h6f7f691_0,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/blast:2.14.1--pl5321h6f7f691_0
+DIAMOND,quay.io/biocontainers/diamond:2.1.8--h43eeafb_0,quay.io,diamond,2.1.8--h43eeafb_0,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/diamond:2.1.8--h43eeafb_0
+MULTIQC,quay.io/biocontainers/multiqc:1.19--pyhdfd78af_0,quay.io,multiqc,1.19--pyhdfd78af_0,211125737934.dkr.ecr.ap-southeast-1.amazonaws.com/quay/biocontainers/multiqc:1.19--pyhdfd78af_0

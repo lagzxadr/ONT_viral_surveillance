@@ -1,0 +1,36 @@
+# Nextflow work directory and outputs
+work/
+results/
+test_results/
+.nextflow/
+.nextflow.log*
+*.nextflow.log
+
+# Pipeline execution reports (generated at runtime)
+pipeline_info/
+
+# HealthOmics local config (contains account-specific values)
+# Keep the file tracked but ignore secrets if needed
+# .healthomics/
+
+# IAM policy temp files
+.healthomics/trust-policy.json
+.healthomics/role-policy.json
+
+# Test data (large files)
+test/data/
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log

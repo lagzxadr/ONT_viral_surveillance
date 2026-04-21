@@ -1,0 +1,3 @@
+sample,barcode,run_id,fastq_path
+sample01,barcode01,run_20260420,test/data/sample01.fastq.gz
+sample02,barcode02,run_20260420,test/data/sample02.fastq.gz

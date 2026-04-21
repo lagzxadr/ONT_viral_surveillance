@@ -1,0 +1,16 @@
+# AWS HealthOmics Configuration
+# Account: 211125737934
+
+# AWS region for HealthOmics workflows
+region = "ap-southeast-1"
+
+# IAM role used to start runs - must have a trust policy for the omics principal
+# Replace <HEALTHOMICS_ROLE_NAME> with your actual role name
+omics_iam_role = "arn:aws:iam::211125737934:role/HealthOmicsWorkflowRole"
+
+# S3 location where run outputs will be written
+# The service role must have write permissions to this location
+run_output_uri = "s3://healthomics-outputs-211125737934-apse1/healthomics-outputs/"
+
+# Recommended: DYNAMIC storage scales automatically and starts runs faster
+run_storage_type = "DYNAMIC"
