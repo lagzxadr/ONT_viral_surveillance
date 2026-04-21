@@ -1,0 +1,17 @@
+standard_concept_id	standard_concept_name	domain	vocabulary	concept_code	concept_class	distinct_source_values	total_source_records	source_values	source_locations	mapping_methods_used
+185349003	Encounter for check up	Visit	SNOMED	185349003	Procedure	1	1877.0	185349003	encounters.CODE	CONCEPT_DIRECT
+171207006	Depression screening	Procedure	SNOMED	171207006	Procedure	1	1704.0	171207006	procedures.CODE	CONCEPT_DIRECT
+314529007	Medication review due	Condition	SNOMED	314529007	Clinical Finding	1	1293.0	314529007	conditions.CODE	CONCEPT_DIRECT
+430193006	Medication Reconciliation	Procedure	SNOMED	430193006	Procedure	1	1255.0	430193006	procedures.CODE	CONCEPT_DIRECT
+80967001	Dental caries	Condition	SNOMED	80967001	Clinical Finding	1	101.0	80967001	conditions.CODE	CONCEPT_DIRECT
+38003564	Not Hispanic or Latino	Ethnicity	Ethnicity	nonhispanic	Ethnicity	1	86.0	nonhispanic	patients.ETHNICITY	CONCEPT_DIRECT
+8527	White	Race	Race	white	Race	1	77.0	white	patients.RACE	CONCEPT_DIRECT
+8532	FEMALE	Gender	Gender	F	Gender	1	66.0	F	patients.GENDER	CONCEPT_DIRECT
+32485007	Hospital admission	Visit	SNOMED	32485007	Procedure	1	50.0	32485007	encounters.CODE	CONCEPT_DIRECT
+8507	MALE	Gender	Gender	M	Gender	1	43.0	M	patients.GENDER	CONCEPT_DIRECT
+38003563	Hispanic or Latino	Ethnicity	Ethnicity	hispanic	Ethnicity	1	23.0	hispanic	patients.ETHNICITY	CONCEPT_DIRECT
+8516	Black or African American	Race	Race	black	Race	1	15.0	black	patients.RACE	CONCEPT_DIRECT
+8515	Asian	Race	Race	asian	Race	1	9.0	asian	patients.RACE	CONCEPT_DIRECT
+1870230	Epinephrine 1 MG/ML Auto-Injector	Drug	RxNorm	1870230	Clinical Drug	1	8.0	1870230	medications.CODE	CONCEPT_DIRECT
+665078	Loratadine 5 MG Chewable Tablet	Drug	RxNorm	665078	Clinical Drug	1	3.0	665078	medications.CODE	CONCEPT_DIRECT
+8522	Other Race	Race	Race	other	Race	1	2.0	other	patients.RACE	CONCEPT_DIRECT

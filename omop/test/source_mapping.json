@@ -1,0 +1,79 @@
+{
+  "_comment": "Source-to-CDM mapping configuration. Each entry in 'tables' describes one source file and how its columns map to an OMOP CDM table.",
+  "tables": [
+    {
+      "source_table":  "patients",
+      "source_file":   "patients.csv",
+      "cdm_table":     "person",
+      "delimiter":     ",",
+      "column_mappings": [
+        { "source_col": "patient_id",       "target_col": "person_id",                  "is_concept_col": false },
+        { "source_col": "birth_year",        "target_col": "year_of_birth",              "is_concept_col": false },
+        { "source_col": "birth_month",       "target_col": "month_of_birth",             "is_concept_col": false },
+        { "source_col": "birth_day",         "target_col": "day_of_birth",               "is_concept_col": false },
+        { "source_col": "gender_code",       "target_col": "gender_concept_id",          "is_concept_col": true,
+          "source_vocabulary": "Gender" },
+        { "source_col": "gender_code",       "target_col": "gender_source_value",        "is_concept_col": false },
+        { "source_col": "race_code",         "target_col": "race_concept_id",            "is_concept_col": true,
+          "source_vocabulary": "Race" },
+        { "source_col": "race_code",         "target_col": "race_source_value",          "is_concept_col": false },
+        { "source_col": "ethnicity_code",    "target_col": "ethnicity_concept_id",       "is_concept_col": true,
+          "source_vocabulary": "Ethnicity" },
+        { "source_col": "ethnicity_code",    "target_col": "ethnicity_source_value",     "is_concept_col": false }
+      ]
+    },
+    {
+      "source_table":  "diagnoses",
+      "source_file":   "diagnoses.csv",
+      "cdm_table":     "condition_occurrence",
+      "delimiter":     ",",
+      "column_mappings": [
+        { "source_col": "diagnosis_id",      "target_col": "condition_occurrence_id",    "is_concept_col": false },
+        { "source_col": "patient_id",        "target_col": "person_id",                  "is_concept_col": false },
+        { "source_col": "icd_code",          "target_col": "condition_concept_id",       "is_concept_col": true,
+          "source_vocabulary": "ICD10CM" },
+        { "source_col": "icd_code",          "target_col": "condition_source_value",     "is_concept_col": false },
+        { "source_col": "diagnosis_date",    "target_col": "condition_start_date",       "is_concept_col": false },
+        { "source_col": "diagnosis_type",    "target_col": "condition_type_concept_id",  "is_concept_col": true,
+          "source_vocabulary": "Condition Type" }
+      ]
+    },
+    {
+      "source_table":  "medications",
+      "source_file":   "medications.csv",
+      "cdm_table":     "drug_exposure",
+      "delimiter":     ",",
+      "column_mappings": [
+        { "source_col": "medication_id",     "target_col": "drug_exposure_id",           "is_concept_col": false },
+        { "source_col": "patient_id",        "target_col": "person_id",                  "is_concept_col": false },
+        { "source_col": "rxnorm_code",       "target_col": "drug_concept_id",            "is_concept_col": true,
+          "source_vocabulary": "RxNorm" },
+        { "source_col": "rxnorm_code",       "target_col": "drug_source_value",          "is_concept_col": false },
+        { "source_col": "start_date",        "target_col": "drug_exposure_start_date",   "is_concept_col": false },
+        { "source_col": "end_date",          "target_col": "drug_exposure_end_date",     "is_concept_col": false },
+        { "source_col": "drug_type",         "target_col": "drug_type_concept_id",       "is_concept_col": true,
+          "source_vocabulary": "Drug Type" }
+      ]
+    },
+    {
+      "source_table":  "lab_results",
+      "source_file":   "lab_results.csv",
+      "cdm_table":     "measurement",
+      "delimiter":     ",",
+      "column_mappings": [
+        { "source_col": "lab_id",            "target_col": "measurement_id",             "is_concept_col": false },
+        { "source_col": "patient_id",        "target_col": "person_id",                  "is_concept_col": false },
+        { "source_col": "loinc_code",        "target_col": "measurement_concept_id",     "is_concept_col": true,
+          "source_vocabulary": "LOINC" },
+        { "source_col": "loinc_code",        "target_col": "measurement_source_value",   "is_concept_col": false },
+        { "source_col": "result_date",       "target_col": "measurement_date",           "is_concept_col": false },
+        { "source_col": "result_value",      "target_col": "value_as_number",            "is_concept_col": false },
+        { "source_col": "unit_code",         "target_col": "unit_concept_id",            "is_concept_col": true,
+          "source_vocabulary": "UCUM" },
+        { "source_col": "unit_code",         "target_col": "unit_source_value",          "is_concept_col": false },
+        { "source_col": "meas_type",         "target_col": "measurement_type_concept_id","is_concept_col": true,
+          "source_vocabulary": "Meas Type" }
+      ]
+    }
+  ]
+}

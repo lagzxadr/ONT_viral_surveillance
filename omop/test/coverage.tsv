@@ -1,0 +1,8 @@
+source_table	source_column	unique_source_codes	mapped_records	total_records	coverage_pct
+conditions	CODE	233	1394.0	5901.0	23.62
+encounters	CODE	46	1927.0	10715.0	17.98
+medications	CODE	135	11.0	6874.0	0.16
+patients	ETHNICITY	2	109.0	109.0	100.0
+patients	GENDER	2	109.0	109.0	100.0
+patients	RACE	5	103.0	109.0	94.5
+procedures	CODE	371	2959.0	24370.0	12.14

@@ -1,0 +1,90 @@
+{
+  "_comment": "Source-to-CDM mapping for OHDSI Tutorial-ETL Synthea raw data. Handles UUID person IDs via hash-based integer conversion in the ETL script.",
+  "tables": [
+    {
+      "source_table":  "patients",
+      "source_file":   "patients.csv",
+      "cdm_table":     "person",
+      "delimiter":     ",",
+      "column_mappings": [
+        { "source_col": "Id",           "target_col": "person_source_value",            "is_concept_col": false },
+        { "source_col": "BIRTHDATE",    "target_col": "birth_datetime",                 "is_concept_col": false },
+        { "source_col": "GENDER",       "target_col": "gender_concept_id",              "is_concept_col": true,
+          "source_vocabulary": "Gender" },
+        { "source_col": "GENDER",       "target_col": "gender_source_value",            "is_concept_col": false },
+        { "source_col": "RACE",         "target_col": "race_concept_id",                "is_concept_col": true,
+          "source_vocabulary": "Race" },
+        { "source_col": "RACE",         "target_col": "race_source_value",              "is_concept_col": false },
+        { "source_col": "ETHNICITY",    "target_col": "ethnicity_concept_id",           "is_concept_col": true,
+          "source_vocabulary": "Ethnicity" },
+        { "source_col": "ETHNICITY",    "target_col": "ethnicity_source_value",         "is_concept_col": false }
+      ]
+    },
+    {
+      "source_table":  "conditions",
+      "source_file":   "conditions.csv",
+      "cdm_table":     "condition_occurrence",
+      "delimiter":     ",",
+      "column_mappings": [
+        { "source_col": "PATIENT",      "target_col": "person_source_value",            "is_concept_col": false },
+        { "source_col": "CODE",         "target_col": "condition_concept_id",           "is_concept_col": true,
+          "source_vocabulary": "SNOMED" },
+        { "source_col": "CODE",         "target_col": "condition_source_value",         "is_concept_col": false },
+        { "source_col": "DESCRIPTION",  "target_col": "condition_source_concept_id",    "is_concept_col": false },
+        { "source_col": "START",        "target_col": "condition_start_date",           "is_concept_col": false },
+        { "source_col": "STOP",         "target_col": "condition_end_date",             "is_concept_col": false },
+        { "source_col": "ENCOUNTER",    "target_col": "visit_source_value",             "is_concept_col": false }
+      ]
+    },
+    {
+      "source_table":  "medications",
+      "source_file":   "medications.csv",
+      "cdm_table":     "drug_exposure",
+      "delimiter":     ",",
+      "column_mappings": [
+        { "source_col": "PATIENT",      "target_col": "person_source_value",            "is_concept_col": false },
+        { "source_col": "CODE",         "target_col": "drug_concept_id",                "is_concept_col": true,
+          "source_vocabulary": "RxNorm" },
+        { "source_col": "CODE",         "target_col": "drug_source_value",              "is_concept_col": false },
+        { "source_col": "DESCRIPTION",  "target_col": "drug_source_concept_id",         "is_concept_col": false },
+        { "source_col": "START",        "target_col": "drug_exposure_start_date",       "is_concept_col": false },
+        { "source_col": "STOP",         "target_col": "drug_exposure_end_date",         "is_concept_col": false },
+        { "source_col": "ENCOUNTER",    "target_col": "visit_source_value",             "is_concept_col": false },
+        { "source_col": "REASONCODE",   "target_col": "stop_reason",                   "is_concept_col": false }
+      ]
+    },
+    {
+      "source_table":  "encounters",
+      "source_file":   "encounters.csv",
+      "cdm_table":     "visit_occurrence",
+      "delimiter":     ",",
+      "column_mappings": [
+        { "source_col": "Id",           "target_col": "visit_source_value",             "is_concept_col": false },
+        { "source_col": "PATIENT",      "target_col": "person_source_value",            "is_concept_col": false },
+        { "source_col": "CODE",         "target_col": "visit_concept_id",               "is_concept_col": true,
+          "source_vocabulary": "SNOMED" },
+        { "source_col": "CODE",         "target_col": "visit_source_concept_id",        "is_concept_col": false },
+        { "source_col": "DESCRIPTION",  "target_col": "visit_source_value_desc",        "is_concept_col": false },
+        { "source_col": "START",        "target_col": "visit_start_date",               "is_concept_col": false },
+        { "source_col": "STOP",         "target_col": "visit_end_date",                 "is_concept_col": false },
+        { "source_col": "ENCOUNTERCLASS","target_col": "visit_type_source_value",       "is_concept_col": false }
+      ]
+    },
+    {
+      "source_table":  "procedures",
+      "source_file":   "procedures.csv",
+      "cdm_table":     "procedure_occurrence",
+      "delimiter":     ",",
+      "column_mappings": [
+        { "source_col": "PATIENT",      "target_col": "person_source_value",            "is_concept_col": false },
+        { "source_col": "CODE",         "target_col": "procedure_concept_id",           "is_concept_col": true,
+          "source_vocabulary": "SNOMED" },
+        { "source_col": "CODE",         "target_col": "procedure_source_value",         "is_concept_col": false },
+        { "source_col": "DESCRIPTION",  "target_col": "procedure_source_concept_id",    "is_concept_col": false },
+        { "source_col": "START",        "target_col": "procedure_date",                 "is_concept_col": false },
+        { "source_col": "ENCOUNTER",    "target_col": "visit_source_value",             "is_concept_col": false },
+        { "source_col": "REASONCODE",   "target_col": "modifier_source_value",          "is_concept_col": false }
+      ]
+    }
+  ]
+}

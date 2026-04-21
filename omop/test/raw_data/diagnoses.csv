@@ -1,0 +1,8 @@
+diagnosis_id,patient_id,icd_code,diagnosis_date,diagnosis_type
+101,1,J06.9,2024-01-10,EHR
+102,1,E11.9,2024-01-10,EHR
+103,2,I10,2024-02-14,EHR
+104,3,J18.9,2024-03-01,EHR
+105,4,Z23,2024-03-15,EHR
+106,5,B97.29,2024-04-01,EHR
+107,2,U07.1,2024-04-05,EHR

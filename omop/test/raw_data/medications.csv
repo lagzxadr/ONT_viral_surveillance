@@ -1,0 +1,6 @@
+medication_id,patient_id,rxnorm_code,start_date,end_date,drug_type
+201,1,1049502,2024-01-11,2024-01-21,Prescription
+202,2,197361,2024-02-15,2024-08-15,Prescription
+203,3,308460,2024-03-02,2024-03-12,Prescription
+204,4,2395492,2024-03-16,2024-03-16,Prescription
+205,5,UNKNOWN_RX,2024-04-02,2024-04-09,Prescription

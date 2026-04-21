@@ -1,0 +1,6 @@
+lab_id,patient_id,loinc_code,result_date,result_value,unit_code,meas_type
+301,1,2160-0,2024-01-12,1.1,mg/dL,Lab
+302,2,4548-4,2024-02-16,7.2,%,Lab
+303,3,789-8,2024-03-03,4.5,10*6/uL,Lab
+304,4,2093-3,2024-03-17,195,mg/dL,Lab
+305,5,UNKNOWN_LOINC,2024-04-03,99,UNKNOWN_UNIT,Lab

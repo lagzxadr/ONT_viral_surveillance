@@ -1,0 +1,18 @@
+concept_id	concept_name	domain_id	vocabulary_id	concept_class_id	standard_concept	concept_code	valid_start_date	valid_end_date	invalid_reason
+8507	MALE	Gender	Gender	Gender	S	M	1970-01-01	2099-12-31	
+8532	FEMALE	Gender	Gender	Gender	S	F	1970-01-01	2099-12-31	
+8527	White	Race	Race	Race	S	white	1970-01-01	2099-12-31	
+8516	Black or African American	Race	Race	Race	S	black	1970-01-01	2099-12-31	
+8515	Asian	Race	Race	Race	S	asian	1970-01-01	2099-12-31	
+8657	Native Hawaiian or Other Pacific Islander	Race	Race	Race	S	native	1970-01-01	2099-12-31	
+8522	Other Race	Race	Race	Race	S	other	1970-01-01	2099-12-31	
+38003564	Not Hispanic or Latino	Ethnicity	Ethnicity	Ethnicity	S	nonhispanic	1970-01-01	2099-12-31	
+38003563	Hispanic or Latino	Ethnicity	Ethnicity	Ethnicity	S	hispanic	1970-01-01	2099-12-31	
+80967001	Dental caries	Condition	SNOMED	Clinical Finding	S	80967001	1970-01-01	2099-12-31	
+314529007	Medication review due	Condition	SNOMED	Clinical Finding	S	314529007	1970-01-01	2099-12-31	
+185349003	Encounter for check up	Visit	SNOMED	Procedure	S	185349003	1970-01-01	2099-12-31	
+32485007	Hospital admission	Visit	SNOMED	Procedure	S	32485007	1970-01-01	2099-12-31	
+430193006	Medication Reconciliation	Procedure	SNOMED	Procedure	S	430193006	1970-01-01	2099-12-31	
+171207006	Depression screening	Procedure	SNOMED	Procedure	S	171207006	1970-01-01	2099-12-31	
+665078	Loratadine 5 MG Chewable Tablet	Drug	RxNorm	Clinical Drug	S	665078	1970-01-01	2099-12-31	
+1870230	Epinephrine 1 MG/ML Auto-Injector	Drug	RxNorm	Clinical Drug	S	1870230	1970-01-01	2099-12-31	
