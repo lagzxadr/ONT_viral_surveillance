@@ -1,2 +1,0 @@
-sample,barcode,run_id,fastq_path
-test_sample,barcode01,2f9c9c7a-5aad-4c2f-9f72-e5faab9e2743,data/test_dataset/sample01_all_reads.fastq.gz

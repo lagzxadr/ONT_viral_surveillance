@@ -73,49 +73,21 @@ Raw FASTQ reads
 
 ### Test run with bundled dataset
 
-A 150 MB test dataset (53,439 ONT reads, run ID `2f9c9c7a`) is included in `data/test_dataset.zip`.
+Prepare a samplesheet pointing to your FASTQ files:
 
-**Prerequisites:**
-```bash
-# Java 11+
-sudo apt install default-jdk
-
-# Nextflow
-curl -s https://get.nextflow.io | bash && sudo mv nextflow /usr/local/bin/
-
-# Docker (recommended)
-curl -fsSL https://get.docker.com | sh
-
-# Or Singularity
-sudo apt install singularity-container
+```csv
+sample,barcode,run_id,fastq_path
+sample01,barcode01,run001,/path/to/reads.fastq.gz
 ```
 
-**Download a Kraken2 viral database** (required — not bundled due to size):
-```bash
-# Pre-built viral DB from Ben Langmead's index (~1 GB, fastest option)
-mkdir kraken2_viral_db
-wget https://genome-idx.s3.amazonaws.com/kraken/k2_viral_20240112.tar.gz
-tar -xzf k2_viral_20240112.tar.gz -C kraken2_viral_db/
-```
+Then run:
 
-**Run the test:**
 ```bash
-# Using the automated run script (handles setup checks)
-export KRAKEN2_DB=/path/to/kraken2_viral_db
-bash run_test.sh
-
-# Or run Nextflow directly
 nextflow run main.nf \
-    -profile docker,test_dataset \
+    -profile docker \
+    --input samplesheet.csv \
     --kraken2_db /path/to/kraken2_viral_db
 ```
-
-The `test_dataset` profile pre-configures:
-- Input: `test/samplesheet_test_dataset.csv` (53,439 reads, single sample)
-- No host depletion (set `--host_genome` to enable)
-- No annotation (set `--blast_db` / `--diamond_db` to enable)
-- Resource limits: 16 GB RAM, 8 CPUs, 4 h
-
 
 
 Create a CSV file (`samplesheet.csv`) with the following columns:
