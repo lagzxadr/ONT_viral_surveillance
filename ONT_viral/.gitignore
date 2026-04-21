@@ -1,0 +1,46 @@
+# Nextflow work directory and outputs
+work/
+results/
+test_results/
+.nextflow/
+.nextflow.log*
+*.nextflow.log
+
+# Pipeline execution reports (generated at runtime)
+pipeline_info/
+
+# HealthOmics local config (contains account-specific values)
+# Keep the file tracked but ignore secrets if needed
+# .healthomics/
+
+# IAM policy temp files
+.healthomics/trust-policy.json
+.healthomics/role-policy.json
+
+# Test data (large files)
+test/data/
+
+# Large test dataset files (>100 MB — use Git LFS or store locally)
+data/test_dataset.zip
+data/test_dataset/sample01_all_reads.fastq.gz
+
+# Reference databases (too large for git)
+data/kraken2_*/
+data/blast_*/
+data/host_*/
+
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/settings.json
+*.swp
+*.swo
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Logs
+*.log
